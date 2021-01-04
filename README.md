@@ -1,2 +1,2 @@
-# RepoTemplate_Unity_2019LTS
-A simple template for a git repo for Unity projects using 2019 LTS
+# UnityRepoTemplateHex
+Basic template for a unity repo with a gitattributes and gitignore. Will add to this as I learn more.
