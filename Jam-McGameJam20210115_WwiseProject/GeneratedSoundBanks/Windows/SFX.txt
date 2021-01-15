@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3157003241	Test			\Default Work Unit\SFX\Test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	613647243	RapMaster_Glitch_07	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Windows\SFX\RapMaster_Glitch_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\RapMaster_Glitch_07		657846
+

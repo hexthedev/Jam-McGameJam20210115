@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{419A2FC7-CDE1-4CD8-B452-8393F4BF1B67}" SchemaVersion="97" RootDocumentID="{BFA8A73C-9E69-4616-80EA-B35E0EDA7366}">
+	<AudioObjects>
+		<WorkUnit Name="SFX" ID="{419A2FC7-CDE1-4CD8-B452-8393F4BF1B67}" OwnerID="{BFA8A73C-9E69-4616-80EA-B35E0EDA7366}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="RapMaster_Glitch_07" ID="{A14D7ACE-BAA8-4C1A-9D67-4E836A6FC1E9}" ShortID="195022203">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0BF685EA-3ACB-4AE2-B095-02CFE3545E03}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{355AC49F-179F-419B-ABE6-81F71FFB1259}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="RapMaster_Glitch_07" ID="{C3092093-638B-4FED-8519-B42F3C4E5303}">
+							<Language>SFX</Language>
+							<AudioFile>RapMaster_Glitch_07.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="613647243"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="RapMaster_Glitch_07" ID="{C3092093-638B-4FED-8519-B42F3C4E5303}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
