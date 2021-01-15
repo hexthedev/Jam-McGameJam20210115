@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="393239870" Language="SFX" Hash="3505401658">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3157003241" Name="Test" ObjectPath="\Events\Default Work Unit\SFX\Test" DurationType="OneShot" DurationMin="7.457846" DurationMax="7.457846">
+					<IncludedMemoryFiles>
+						<File Id="613647243" Language="SFX">
+							<ShortName>RapMaster_Glitch_07.wav</ShortName>
+							<Path>SFX\RapMaster_Glitch_07_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2953616821">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

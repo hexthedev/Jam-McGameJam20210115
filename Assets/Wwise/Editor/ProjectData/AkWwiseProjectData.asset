@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d5567fa65c6ef41aa275600880a7c2, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 4cc539d13a092340a878d499df23c7f9
+    GuidInternal: 
+    m_lastTime: -8585908526949262633
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 9fc45a359f179b41abe681f71ffb1259
+    GuidInternal: 
+    m_lastTime: -8585908526949886049
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 26ad0fdbb6bd82459bc7e7ff403cdc0b
+    GuidInternal: 
+    m_lastTime: -8585908523183745131
+    List:
+    - name: SFX
+      guid: d327fc7cb72d954ea0cc8f23a0fb851b
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 7
+      Path: Default Work Unit\SFX
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 3e893f9ca9104e45b125c4756369e5f2
+    GuidInternal: 
+    m_lastTime: -8585908523184034352
+    List: []
+  - PhysicalPath: Events\SFX.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: SFX
+      ObjectType: 12
+    ParentPath: Default Work Unit\SFX
+    guid: de5209cc11721149a29650141cce6c07
+    GuidInternal: 
+    m_lastTime: -8585908523184014408
+    List:
+    - name: Test
+      guid: c75eeddee08c1a41bb7541c116b3fbee
+      id: 3157003241
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Test
+        ObjectType: 3
+      Path: Default Work Unit\SFX\Test
+      maxAttenuation: 0
+      maxDuration: 7.457846
+      minDuration: 7.457846
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: c5fdff720e30cd4c9f314b73c29f192b
+    GuidInternal: 
+    m_lastTime: -8585908526950245101
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: cb544cd37f725d4f939f98d53982d4b5
+    GuidInternal: 
+    m_lastTime: -8585908526949407340
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: e1e1291b60770746ab229a7bb01a6f38
+    GuidInternal: 
+    m_lastTime: -8585908526949347497
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: bfe202db91d5af4188cd1b4888f91dec
+    GuidInternal: 
+    m_lastTime: -8585908526949302448
+    List: []
+  ExpandedItems:
+  - /Jam-McGameJam20210115_WwiseProject
+  - /Jam-McGameJam20210115_WwiseProject/Events
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
