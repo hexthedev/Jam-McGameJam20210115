@@ -10,13 +10,14 @@ public class DebrisShootAbility : Ability
     [Range(0, 90)]
     public float maxAngle = 90;
 
-    public float projectileSpeed;
+    public float minSpeed = 100;
+    public float maxSpeed = 300;
 
     public override void DoAbility()
     {
         Quaternion rotation = Quaternion.Euler(0,0, Random.Range(minAngle, maxAngle));
         GameObject projectile = Instantiate(projectilePrefab, transform.position, rotation);
-        projectile.GetComponent<Rigidbody2D>().AddRelativeForce(projectileSpeed * Vector3.up);
+        projectile.GetComponent<Rigidbody2D>().AddRelativeForce(Random.Range(minSpeed, maxSpeed) * Vector3.up);
 
 
     }
