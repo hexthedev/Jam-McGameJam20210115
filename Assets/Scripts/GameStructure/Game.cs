@@ -18,6 +18,7 @@ public class Game : MonoBehaviour
     public UnityEvent OnGameOver;
 
     public float _score = 0;
+    public bool gameover = false;
 
     public List<FixableDestructable> Destructables = new List<FixableDestructable>();
 
@@ -47,6 +48,8 @@ public class Game : MonoBehaviour
 
     public void Update()
     {
+        if (gameover) return;
+
         time -= Time.deltaTime;
         Events.Instance.InvokeEv(Events.eTimer, time);
 
