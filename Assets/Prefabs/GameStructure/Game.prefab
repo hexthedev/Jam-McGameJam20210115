@@ -43,5 +43,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc01429877ef43b4ea224f54fd07e6fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
+  KiwaiiHealAmount: 7
+  KowaiiBreakAmount: 7
+  KiwaiiHitRubbleScore: -5
+  KiwaiiCatchCatScore: 10
+  KowaiiBreakHouseScore: -10
+  KowaiiHitHeartScore: 5
+  OnGameOver:
+    m_PersistentCalls:
+      m_Calls: []
+  _score: 0
+  Destructables: []
   time: 100
