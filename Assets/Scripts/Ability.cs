@@ -4,6 +4,10 @@ using UnityEngine;
 
 public abstract class Ability : MonoBehaviour
 {
+#if UNITY_EDITOR
+    public bool testOnClick = false;
+#endif
+
     public GameObject projectilePrefab;
     public abstract void DoAbility();
 
@@ -12,7 +16,7 @@ public abstract class Ability : MonoBehaviour
 #if UNITY_EDITOR
         if (Input.GetMouseButtonDown(0))
         {
-            DoAbility();
+            if(testOnClick) DoAbility();
         }
 #endif
     }
