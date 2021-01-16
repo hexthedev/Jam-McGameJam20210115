@@ -8,6 +8,6 @@ public class Kowaii : Character
     {
         FixableDestructable fd = proximator.Prox;
 
-
+        if (fd != null) fd.Break(Game.Instance.KowaiiBreakAmount);
     }
 }
