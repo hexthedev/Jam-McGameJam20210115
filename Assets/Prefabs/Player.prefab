@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6271477238000907918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.1253264, y: -0.54, z: -5}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -96,10 +96,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpMultiplier: 100
   fallMultiplier: 2
-  maxSpeed: 10
-  minSpeed: -10
-  changeDirectionReactivity: 4
-  jump: 273
+  moveSpeed: 3.5
+  maxSpeed: 4.5
+  minSpeed: -4.5
+  airControl: 5
+  jump: 0
+  left: 0
+  right: 0
 --- !u!50 &6271477238000908148
 Rigidbody2D:
   serializedVersion: 4
