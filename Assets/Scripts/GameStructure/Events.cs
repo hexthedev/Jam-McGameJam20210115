@@ -7,6 +7,8 @@ using UnityEngine;
 public class Events : MonoBehaviour
 {
     public const string eTimer = "Timer";
+    public const string eScoreChange = "ScoreChange";
+    public const string eGameOver = "GameOver";
 
     public static Events Instance = null;
 

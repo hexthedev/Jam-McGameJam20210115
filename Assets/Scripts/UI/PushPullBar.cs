@@ -11,4 +11,17 @@ public class PushPullBar : MonoBehaviour
     {
         image.transform.localScale = new Vector3(score / 10, image.transform.localScale.y, image.transform.localScale.z);
     }
+
+    public void Awake()
+    {
+        Events.Instance.Subscribe(HandleEvent);
+    }
+
+    public void HandleEvent(string name, object args)
+    {
+        if (name == Events.eScoreChange)
+        {
+            SetScore((float)args);
+        }
+    }
 }

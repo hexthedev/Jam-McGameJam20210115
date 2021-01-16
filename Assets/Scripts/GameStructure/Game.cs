@@ -11,21 +11,27 @@ public class Game : MonoBehaviour
     /// </summary>
     public float score;
 
-    public float time;
+    public float time = 100;
 
 
     public void Awake()
     {
         Instance = this;
+
     }
 
 
 
     public void Update()
     {
-        time += Time.deltaTime;
-
+        time -= Time.deltaTime;
         Events.Instance.Invoke(Events.eTimer, time);
+
+        if(time <= 0)
+        {
+            Events.Instance.Invoke(Events.eGameOver, null);
+        }
+
     }
 
 
