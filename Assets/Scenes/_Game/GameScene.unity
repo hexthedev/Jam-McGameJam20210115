@@ -1225,6 +1225,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1570348410802482500, guid: 1f6f64f99b13d724d83a17249b4d01a0,
+        type: 3}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 16183
+      objectReference: {fileID: 0}
     - target: {fileID: 2502058316166325082, guid: 1f6f64f99b13d724d83a17249b4d01a0,
         type: 3}
       propertyPath: m_Name
@@ -1553,6 +1558,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7498743569911736546, guid: 47dd45db835922e428436103971fe43d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47dd45db835922e428436103971fe43d, type: 3}
 --- !u!1001 &5149874669054187204
@@ -1622,6 +1632,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kiwaii
       objectReference: {fileID: 0}
+    - target: {fileID: 1184663204351020955, guid: 9c9d6817b4d02d2468322eb4669adbec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c9d6817b4d02d2468322eb4669adbec, type: 3}
 --- !u!1001 &5618261645103589281
@@ -1631,6 +1646,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5864441764989412, guid: aec1a8710c3918d49a0e917d23bd0ff6, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1941280562676586088, guid: aec1a8710c3918d49a0e917d23bd0ff6,
         type: 3}
       propertyPath: m_RootOrder
@@ -1690,6 +1709,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kowaii
+      objectReference: {fileID: 0}
+    - target: {fileID: 1941280562676586388, guid: aec1a8710c3918d49a0e917d23bd0ff6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031107125865887837, guid: aec1a8710c3918d49a0e917d23bd0ff6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aec1a8710c3918d49a0e917d23bd0ff6, type: 3}

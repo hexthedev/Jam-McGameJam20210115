@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AbilityProjectile : MonoBehaviour
 {
+    public ProjecileType Type;
+
     public float lifeTime;
 
     void Start()
@@ -16,4 +18,11 @@ public class AbilityProjectile : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public enum ProjecileType
+    {
+        CAT,
+        DEBRIS,
+        HEART,
+        STUN
+    }
 }

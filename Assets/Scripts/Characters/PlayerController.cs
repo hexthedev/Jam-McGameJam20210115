@@ -138,10 +138,16 @@ public class PlayerController : MonoBehaviour
             canDoubleJump = true;
         }
 
-        
+        AbilityProjectile proj = collision.gameObject.GetComponent<AbilityProjectile>();
+
+        if(proj != null)
+        {
+            character.ProjectileCollision(proj);
+        }
     }
 
     private void Wrap() { gameObject.GetComponent<CapsuleCollider2D>().enabled = true; }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Floor" && goDrop)

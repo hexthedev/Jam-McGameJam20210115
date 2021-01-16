@@ -21,13 +21,6 @@ public class HeartShootAbility : Ability
         projectileDirections.Add(Vector2.down + Vector2.right);
     }
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            DoAbility();
-        }
-    }
     public override void DoAbility()
     {
         foreach(Vector2 direction in projectileDirections)

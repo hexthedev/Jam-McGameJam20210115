@@ -9,6 +9,11 @@ public class Game : MonoBehaviour
     public int KiwaiiHealAmount = 7;
     public int KowaiiBreakAmount = 7;
 
+    public float KiwaiiHitRubbleScore = -5;
+    public float KiwaiiCatchCatScore = 10;
+    public float KowaiiBreakHouseScore = -10;
+    public float KowaiiHitHeartScore = 5;
+
 
     private float _score = 0;
 
