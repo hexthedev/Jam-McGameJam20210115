@@ -58,6 +58,9 @@ public class FixableDestructable : MonoBehaviour
         health = Mathf.Clamp(health + amount, 0, maxHealth);
         progressBar.enabled = true;
         progressBar.UpdateProgressBar(health, maxHealth);
+
+        if (health == 0) Events.Instance.InvokeEv(Events.eDestructableBroken, null);
+        if (health == maxHealth) Events.Instance.InvokeEv(Events.eDestructableFixed, null);
     }
 
     private void ResetFixCooldown()
