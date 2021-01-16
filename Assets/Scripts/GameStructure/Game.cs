@@ -23,7 +23,9 @@ public class Game : MonoBehaviour
 
     public void Update()
     {
-        time = +Time.deltaTime;
+        time += Time.deltaTime;
+
+        Events.Instance.Invoke(Events.eTimer, time);
     }
 
 

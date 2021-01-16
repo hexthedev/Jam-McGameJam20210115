@@ -6,11 +6,13 @@ using UnityEngine;
 
 public class Events : MonoBehaviour
 {
+    public const string eTimer = "Timer";
+
     public static Events Instance = null;
 
     private List<Action<string, object>> Subs = new List<Action<string, object>>();
 
-    public void OnAwake()
+    public void Awake()
     {
         Instance = this;
     }
