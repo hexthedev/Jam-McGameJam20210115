@@ -18,7 +18,7 @@ public class DebrisShootAbility : Ability
         float randomDirectionX = Random.Range(-1f, 1f);
         Vector3 direction = new Vector2(randomDirectionX, 1);
         GameObject projectile = Instantiate(projectilePrefab, transform.position + direction, Quaternion.identity);
-        projectile.GetComponent<Rigidbody>().AddForce(direction * projectileSpeed);
+        projectile.GetComponent<Rigidbody2D>().AddForce(direction * projectileSpeed);
 
     }
 }

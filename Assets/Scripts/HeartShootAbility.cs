@@ -33,7 +33,7 @@ public class HeartShootAbility : Ability
         foreach(Vector2 direction in projectileDirections)
         {
             GameObject projectile = Instantiate(projectilePrefab, (Vector2)transform.position + direction, Quaternion.identity);
-            projectile.GetComponent<Rigidbody>().AddForce(direction * projectileSpeed);
+            projectile.GetComponent<Rigidbody2D>().AddForce(direction * projectileSpeed);
         }
         
     }
