@@ -22,6 +22,15 @@ public class FixableDestructable : MonoBehaviour
 
     public Ability DebrisAbility;
 
+    public Renderer HighlightRenderer;
+    public Material NeutralMaterial;
+    public Material HighlighMaterial;
+
+    private void Awake()
+    {
+        Game.Instance.Destructables.Add(this);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +38,15 @@ public class FixableDestructable : MonoBehaviour
         isOnFixCooldown = false;
         isOnBreakCoolDown = false;
         progressBar = GetComponentInChildren<FixProgressBar>();
+    }
+
+    /// <summary>
+    /// true is highlighted, false is not
+    /// </summary>
+    /// <param name="mode"></param>
+    public void Highlight(bool mode)
+    {
+        HighlightRenderer.material = mode ? HighlighMaterial : NeutralMaterial;
     }
 
     public void Fix(int amount)

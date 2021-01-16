@@ -46,4 +46,7 @@ MonoBehaviour:
   testOnClick: 0
   projectilePrefab: {fileID: 8322240519737477344, guid: aa679dad0a5556748a8df83f218b4b35,
     type: 3}
-  projectileSpeed: 500
+  minAngle: -90
+  maxAngle: 90
+  minSpeed: 150
+  maxSpeed: 500

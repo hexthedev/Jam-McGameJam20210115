@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Kiwaii : MonoBehaviour
+public class Kiwaii : Character
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void BasicAction()
     {
-        
-    }
+        FixableDestructable fd = proximator.Prox;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (fd != null) fd.Fix(Game.Instance.KiwaiiHealAmount);
     }
 }

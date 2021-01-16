@@ -22,7 +22,9 @@ public class PlayerController : MonoBehaviour
     public KeyCode left;
     public KeyCode right;
     public KeyCode drop;
-    
+    public KeyCode fixbreak;
+
+    public Character character;
 
     Rigidbody2D playerBody;
     
@@ -55,9 +57,10 @@ public class PlayerController : MonoBehaviour
         {
             goDrop = true;
         }
-
-        
-
+        else if (Input.GetKey(fixbreak))
+        {
+            character.BasicAction();
+        }
     }
 
     private void FixedUpdate()
