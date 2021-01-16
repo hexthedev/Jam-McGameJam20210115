@@ -9,6 +9,9 @@ public class Events : MonoBehaviour
     public const string eTimer = "Timer";
     public const string eScoreChange = "ScoreChange";
     public const string eGameOver = "GameOver";
+    public const string eDestructableFixed = "DestructableFixed";
+    public const string eDestructableBroken = "DestructableBroken";
+
 
     public static Events Instance = null;
 
@@ -29,7 +32,7 @@ public class Events : MonoBehaviour
         Subs.Remove(callback);
     }
 
-    public void Invoke(string name, object arg)
+    public void InvokeEv(string name, object arg)
     {
         foreach(Action<string, object> call in Subs)
         {

@@ -6,13 +6,6 @@ public class DebrisShootAbility : Ability
 {
     public float projectileSpeed;
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            DoAbility();
-        }
-    }
     public override void DoAbility()
     {
         float randomDirectionX = Random.Range(-1f, 1f);

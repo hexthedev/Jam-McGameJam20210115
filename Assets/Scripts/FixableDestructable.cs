@@ -5,11 +5,22 @@ using UnityEngine.UI;
 
 public class FixableDestructable : MonoBehaviour
 {
-    private int health;
+    public int health;
     public int maxHealth;
     public float cooldownTime;
-    private FixProgressBar progressBar;
-    private bool isOnFixCooldown, isOnBreakCoolDown;
+    public FixProgressBar progressBar;
+    public bool isOnFixCooldown, isOnBreakCoolDown;
+
+    public int minDebris = 2;
+    public int maxDebris = 7;
+
+    public float minDebrisEmitDelay = 0.1f;
+    public float maxDebrisEmitDelay = 0.4f;
+
+    [Range(0, 1f)]
+    public float DebrisProbability = 0.8f;
+
+    public Ability DebrisAbility;
 
     // Start is called before the first frame update
     void Start()
@@ -18,19 +29,6 @@ public class FixableDestructable : MonoBehaviour
         isOnFixCooldown = false;
         isOnBreakCoolDown = false;
         progressBar = GetComponentInChildren<FixProgressBar>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Fix(10);
-        }
-        if (Input.GetMouseButtonDown(1))
-        {
-            Break(10);
-        }
     }
 
     public void Fix(int amount)
@@ -50,6 +48,11 @@ public class FixableDestructable : MonoBehaviour
             HealthChange(-amount);
             isOnBreakCoolDown = true;
             Invoke(nameof(ResetBreakCooldown), cooldownTime);
+
+            if(Random.Range(0,1f) < DebrisProbability)
+            {
+                StartCoroutine(DoDebrisCoroutine(Random.Range(minDebris, maxDebris)));
+            }
         }
     }
 
@@ -58,6 +61,9 @@ public class FixableDestructable : MonoBehaviour
         health = Mathf.Clamp(health + amount, 0, maxHealth);
         progressBar.enabled = true;
         progressBar.UpdateProgressBar(health, maxHealth);
+
+        if (health == 0) Events.Instance.InvokeEv(Events.eDestructableBroken, null);
+        if (health == maxHealth) Events.Instance.InvokeEv(Events.eDestructableFixed, null);
     }
 
     private void ResetFixCooldown()
@@ -69,4 +75,15 @@ public class FixableDestructable : MonoBehaviour
     {
         isOnBreakCoolDown = false;
     }
+
+
+
+    public IEnumerator DoDebrisCoroutine(int number)
+    {
+        for(int i = 0; i<number; i++)
+        {
+            DebrisAbility.DoAbility();
+            yield return new WaitForSeconds(Random.Range(minDebrisEmitDelay, maxDebrisEmitDelay)); 
+        }
+    } 
 }

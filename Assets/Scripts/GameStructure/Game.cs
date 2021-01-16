@@ -1,15 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Game : MonoBehaviour
 {
     public static Game Instance = null;
 
+    private float _score = 0;
+
     /// <summary>
     /// -100 for happy and +100 for angry population
     /// </summary>
-    public float score;
+    public float score
+    {
+        get => _score;
+        set
+        {
+            _score = value;
+            if (value != 0) Events.Instance.InvokeEv(Events.eScoreChange, _score);
+        }
+    }
 
     public float time = 100;
 
@@ -25,16 +33,27 @@ public class Game : MonoBehaviour
     public void Update()
     {
         time -= Time.deltaTime;
-        Events.Instance.Invoke(Events.eTimer, time);
+        Events.Instance.InvokeEv(Events.eTimer, time);
 
         if(time <= 0)
         {
-            Events.Instance.Invoke(Events.eGameOver, null);
+            Events.Instance.InvokeEv(Events.eGameOver, null);
         }
 
     }
 
+    public void HandleEvents(string name, object arg)
+    {
+        if(name == Events.eDestructableFixed)
+        {
+            score = score + 10;
+        }
 
+        if(name == Events.eDestructableBroken)
+        {
+            score = score + 10;
+        }
+    }
 
 
 }
