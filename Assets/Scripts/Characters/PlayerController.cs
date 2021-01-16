@@ -8,7 +8,9 @@ public class PlayerController : MonoBehaviour
     bool canDoubleJump;
     bool jumpKeyPressed;
     bool goLeft;
-    bool goRight;    
+    bool goRight;
+    bool goDrop;
+    float groundCheckBuffer = 0.5f;
     
     public float jumpMultiplier = 100f;
     public float fallMultiplier = 2f;
@@ -19,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public KeyCode jump;
     public KeyCode left;
     public KeyCode right;
+    public KeyCode drop;
+    
 
     Rigidbody2D playerBody;
     
@@ -47,6 +51,10 @@ public class PlayerController : MonoBehaviour
         {
             goRight = true;
         }
+        else if (Input.GetKey(drop))
+        {
+            goDrop = true;
+        }
 
         
 
@@ -57,15 +65,16 @@ public class PlayerController : MonoBehaviour
         
         //Do user movement
         float horizontalVelocity; 
+        
 
         //Control if not jumping/falling
-        if(playerBody.velocity.y == 0 && goLeft)
+        if(onGround && goLeft)
         {
             horizontalVelocity = Mathf.Clamp(playerBody.velocity.x - moveSpeed , minSpeed, maxSpeed);
             playerBody.velocity = new Vector2(horizontalVelocity, playerBody.velocity.y);
             goLeft = false;
         }
-        if(playerBody.velocity.y == 0 && goRight)
+        if(onGround  && goRight)
         {
             horizontalVelocity = Mathf.Clamp(playerBody.velocity.x + moveSpeed, minSpeed, maxSpeed);
             playerBody.velocity = new Vector2(horizontalVelocity, playerBody.velocity.y);
@@ -73,14 +82,14 @@ public class PlayerController : MonoBehaviour
         }
         
         //Control if jumping/falling
-        if (playerBody.velocity.y != 0 && goLeft)
+        if (!onGround && goLeft)
         {
             horizontalVelocity = Mathf.Clamp(playerBody.velocity.x - (moveSpeed /airControl), minSpeed, maxSpeed);
             playerBody.velocity = new Vector2(horizontalVelocity, playerBody.velocity.y);
             goLeft = false;
         }
 
-        if (playerBody.velocity.y != 0 && goRight)
+        if (!onGround && goRight)
         {
             horizontalVelocity = Mathf.Clamp(playerBody.velocity.x + (moveSpeed /airControl), minSpeed, maxSpeed);
             playerBody.velocity = new Vector2(horizontalVelocity, playerBody.velocity.y);
@@ -92,10 +101,7 @@ public class PlayerController : MonoBehaviour
             //Ground Jump
             if (onGround)
             {
-                playerBody.AddForce(Vector2.up * jumpMultiplier, ForceMode2D.Impulse);
-
-
-                canDoubleJump = true;
+                playerBody.AddForce(Vector2.up * jumpMultiplier, ForceMode2D.Impulse);                
             }
             //Double jump
             else if (canDoubleJump)
@@ -107,6 +113,7 @@ public class PlayerController : MonoBehaviour
             }
             jumpKeyPressed = false;
         }
+
 
         //Cleaner fall mechanic
         if (playerBody.velocity.y < 0)
@@ -122,17 +129,36 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Floor")
+        if (collision.gameObject.tag == "Floor" && playerBody.velocity.y < groundCheckBuffer && playerBody.velocity.y > -groundCheckBuffer)
         {
             onGround = true;
+            canDoubleJump = true;
         }
+
+        
     }
 
+    private void Wrap() { gameObject.GetComponent<CapsuleCollider2D>().enabled = true; }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Floor" && goDrop)
+        {            
+            goDrop = false;
+            gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+
+            
+            Invoke(nameof(Wrap), 0.16f);
+            
+            Debug.Log("drop");
+        }
+    }
+    
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Floor")
         {
-            onGround = false;
+            onGround = false;            
         }
+       
     }
 }
