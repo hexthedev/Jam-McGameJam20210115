@@ -24,11 +24,16 @@ public class Events : MonoBehaviour
         Subs.Add(callback);
     }
 
+    public void Unsubscribe(Action<string, object> callback)
+    {
+        Subs.Remove(callback);
+    }
+
     public void Invoke(string name, object arg)
     {
         foreach(Action<string, object> call in Subs)
         {
-            call(name, arg);
+            if(call != null) call(name, arg);
         }
     }
 
