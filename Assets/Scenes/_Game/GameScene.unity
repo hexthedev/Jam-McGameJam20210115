@@ -2239,39 +2239,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
         type: 3}
-      propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
-        type: 3}
-      propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
-        type: 3}
       propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 828758654}
-    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
-        type: 3}
-      propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
-        type: 3}
-      propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
-        type: 3}
-      propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
-        type: 3}
-      propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 8202442314166985226, guid: d7e10066d3a87ae469020d98a5d70a18,
         type: 3}
       propertyPath: m_LocalPosition.x

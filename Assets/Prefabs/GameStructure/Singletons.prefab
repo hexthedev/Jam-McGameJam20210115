@@ -115,6 +115,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 692068008860404111}
     m_Modifications:
+    - target: {fileID: 8668960875032461400, guid: 08e073efd515b79479f86e5afbcbc74b,
+        type: 3}
+      propertyPath: KiwaiiCatchCatScore
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668960875032461400, guid: 08e073efd515b79479f86e5afbcbc74b,
+        type: 3}
+      propertyPath: KowaiiHitHeartScore
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668960875032461400, guid: 08e073efd515b79479f86e5afbcbc74b,
+        type: 3}
+      propertyPath: KiwaiiHitRubbleScore
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668960875032461400, guid: 08e073efd515b79479f86e5afbcbc74b,
+        type: 3}
+      propertyPath: KowaiiBreakHouseScore
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668960875032461400, guid: 08e073efd515b79479f86e5afbcbc74b,
+        type: 3}
+      propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668960875032461400, guid: 08e073efd515b79479f86e5afbcbc74b,
+        type: 3}
+      propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668960875032461400, guid: 08e073efd515b79479f86e5afbcbc74b,
+        type: 3}
+      propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668960875032461400, guid: 08e073efd515b79479f86e5afbcbc74b,
+        type: 3}
+      propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668960875032461400, guid: 08e073efd515b79479f86e5afbcbc74b,
+        type: 3}
+      propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8668960875032461400, guid: 08e073efd515b79479f86e5afbcbc74b,
+        type: 3}
+      propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8668960875032461402, guid: 08e073efd515b79479f86e5afbcbc74b,
         type: 3}
       propertyPath: m_Name
