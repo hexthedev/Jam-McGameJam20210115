@@ -11,6 +11,8 @@ public class FixableDestructable : MonoBehaviour
     private FixProgressBar progressBar;
     private bool isOnFixCooldown, isOnBreakCoolDown;
 
+    public Ability OnBroken;
+
     // Start is called before the first frame update
     void Start()
     {
