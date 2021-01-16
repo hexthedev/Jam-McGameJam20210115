@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class DebrisShootAbility : Ability
 {
+    [Range(-90, 0)]
+    public float minAngle = -90;
+
+    [Range(0, 90)]
+    public float maxAngle = 90;
+
     public float projectileSpeed;
 
     public override void DoAbility()
     {
-        float randomDirectionX = Random.Range(-1f, 1f);
-        Vector3 direction = new Vector2(randomDirectionX, 1);
-        GameObject projectile = Instantiate(projectilePrefab, transform.position + direction, Quaternion.identity);
-        projectile.GetComponent<Rigidbody2D>().AddForce(direction * projectileSpeed);
+        Quaternion rotation = Quaternion.Euler(0,0, Random.Range(minAngle, maxAngle));
+        GameObject projectile = Instantiate(projectilePrefab, transform.position, rotation);
+        projectile.GetComponent<Rigidbody2D>().AddRelativeForce(projectileSpeed * Vector3.up);
+
 
     }
 }

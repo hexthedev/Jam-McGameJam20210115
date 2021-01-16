@@ -22,6 +22,11 @@ public class FixableDestructable : MonoBehaviour
 
     public Ability DebrisAbility;
 
+    private void Awake()
+    {
+        Game.Instance.Destructables.Add(this);
+    }
+
     // Start is called before the first frame update
     void Start()
     {

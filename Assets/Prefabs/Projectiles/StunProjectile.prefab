@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2789666805793122451}
   - component: {fileID: 5023092132989994889}
   - component: {fileID: -4473201755322348992}
-  - component: {fileID: -7021104357906261058}
-  m_Layer: 0
-  m_Name: HeartShootProjectile
+  - component: {fileID: 5118208112628000622}
+  m_Layer: 8
+  m_Name: StunProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 2
---- !u!50 &-7021104357906261058
+--- !u!50 &5118208112628000622
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
