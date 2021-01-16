@@ -13,12 +13,18 @@ public class DebrisShootAbility : Ability
     public float minSpeed = 100;
     public float maxSpeed = 300;
 
+    [Range(0, 1f)]
+    public float catChance = 0.25f;
+
+    public GameObject catProjectile = null;
+
     public override void DoAbility()
     {
         Quaternion rotation = Quaternion.Euler(0,0, Random.Range(minAngle, maxAngle));
-        GameObject projectile = Instantiate(projectilePrefab, transform.position, rotation);
+
+        GameObject projPrefab = Random.Range(0f, 1f) < catChance ? catProjectile : projectilePrefab;
+        GameObject projectile = Instantiate(projPrefab, transform.position, rotation);
+
         projectile.GetComponent<Rigidbody2D>().AddRelativeForce(Random.Range(minSpeed, maxSpeed) * Vector3.up);
-
-
     }
 }

@@ -9,8 +9,13 @@ public class Game : MonoBehaviour
     public int KiwaiiHealAmount = 7;
     public int KowaiiBreakAmount = 7;
 
+    public float KiwaiiHitRubbleScore = -5;
+    public float KiwaiiCatchCatScore = 10;
+    public float KowaiiBreakHouseScore = -10;
+    public float KowaiiHitHeartScore = 5;
 
-    private float _score = 0;
+
+    public float _score = 0;
 
     public List<FixableDestructable> Destructables = new List<FixableDestructable>();
 
@@ -33,7 +38,7 @@ public class Game : MonoBehaviour
     public void Awake()
     {
         Instance = this;
-
+        Events.Instance.Subscribe(HandleEvents);
     }
 
 
@@ -59,7 +64,7 @@ public class Game : MonoBehaviour
 
         if(name == Events.eDestructableBroken)
         {
-            score = score + 10;
+            score = score - 10;
         }
     }
 

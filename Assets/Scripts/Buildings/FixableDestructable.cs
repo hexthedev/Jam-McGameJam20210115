@@ -26,6 +26,8 @@ public class FixableDestructable : MonoBehaviour
     public Material NeutralMaterial;
     public Material HighlighMaterial;
 
+    public State state = State.FIXED;
+
     private void Awake()
     {
         Game.Instance.Destructables.Add(this);
@@ -80,8 +82,20 @@ public class FixableDestructable : MonoBehaviour
         progressBar.enabled = true;
         progressBar.UpdateProgressBar(health, maxHealth);
 
-        if (health == 0) Events.Instance.InvokeEv(Events.eDestructableBroken, null);
-        if (health == maxHealth) Events.Instance.InvokeEv(Events.eDestructableFixed, null);
+        if (health == 0 && state != State.BROKEN)
+        {
+            Events.Instance.InvokeEv(Events.eDestructableBroken, null);
+            state = State.BROKEN;
+        } 
+        else if (health == maxHealth && state != State.FIXED)
+        {
+            Events.Instance.InvokeEv(Events.eDestructableFixed, null);
+            state = State.FIXED;
+        } 
+        else if(state != State.MIDDLE && health != maxHealth && health != 0)
+        {
+            state = State.MIDDLE;
+        }
     }
 
     private void ResetFixCooldown()
@@ -104,4 +118,11 @@ public class FixableDestructable : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(minDebrisEmitDelay, maxDebrisEmitDelay)); 
         }
     } 
+
+    public enum State
+    {
+        BROKEN, 
+        MIDDLE,
+        FIXED
+    }
 }

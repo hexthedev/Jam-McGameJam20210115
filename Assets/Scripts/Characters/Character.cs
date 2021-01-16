@@ -12,4 +12,6 @@ public abstract class Character : MonoBehaviour
     {
 
     }
+
+    public abstract void ProjectileCollision(AbilityProjectile proj);
 }

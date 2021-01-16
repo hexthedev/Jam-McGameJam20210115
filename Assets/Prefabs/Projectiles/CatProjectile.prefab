@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 8225915619852137619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 8064350139504004476}
   m_RootOrder: 0
@@ -39,7 +39,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8225915619852137619}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &6545039792925827670
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9361d7d368e813047980c6abc3892799, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: -2769819747074363796}
   - component: {fileID: 4499907040869554119}
   m_Layer: 8
-  m_Name: DebrisProjectile
+  m_Name: CatProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d9fa5833f604049920f37062890ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 1
   lifeTime: 2
 --- !u!50 &-2769819747074363796
 Rigidbody2D:
@@ -142,7 +141,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 0.75
   m_Material: {fileID: 6200000, guid: 3419aa5540e4b6f4baeed583d77ce27f, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
