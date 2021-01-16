@@ -325,6 +325,9 @@ MonoBehaviour:
   maxDebrisEmitDelay: 0.4
   DebrisProbability: 0.5
   DebrisAbility: {fileID: 3603905307118006209}
+  HighlightRenderer: {fileID: 1613468194}
+  NeutralMaterial: {fileID: 2100000, guid: ca49067a738b1d64c9176b9f38e1f447, type: 2}
+  HighlighMaterial: {fileID: 2100000, guid: aa0a8747738cea148a3e3f3ef3ab8596, type: 2}
 --- !u!1001 &1525720216
 PrefabInstance:
   m_ObjectHideFlags: 0

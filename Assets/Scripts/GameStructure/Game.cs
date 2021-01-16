@@ -6,6 +6,10 @@ public class Game : MonoBehaviour
 {
     public static Game Instance = null;
 
+    public int KiwaiiHealAmount = 7;
+    public int KowaiiBreakAmount = 7;
+
+
     private float _score = 0;
 
     public List<FixableDestructable> Destructables = new List<FixableDestructable>();
