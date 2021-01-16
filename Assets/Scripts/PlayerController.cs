@@ -3,18 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
-{
-    
-    bool jumpKeyPressed;
+{       
     bool onGround;
     bool canDoubleJump;
-    float horizontalInput;
-    public float jumpMultiplier = 100;
-    public float fallMultiplier = 2;
-    public float maxSpeed = 10;
-    public float minSpeed = -10;
-    public float changeDirectionReactivity = 4;
+    bool jumpKeyPressed;
+    bool goLeft;
+    bool goRight;    
+    
+    public float jumpMultiplier = 100f;
+    public float fallMultiplier = 2f;
+    public float moveSpeed = 10f;
+    public float maxSpeed = 10f;
+    public float minSpeed = -10f;    
+    public float airControl = 5f;
+    public KeyCode jump;
+    public KeyCode left;
+    public KeyCode right;
+
     Rigidbody2D playerBody;
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,59 +34,90 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) )
+        //Get user movement input
+        if (Input.GetKeyDown(jump))
         {
             jumpKeyPressed = true;
         }
+        else if (Input.GetKey(left))
+        {
+            goLeft = true;
+        }
+        else if (Input.GetKey(right))
+        {
+            goRight = true;
+        }
 
-        horizontalInput += Input.GetAxis("Horizontal") * Time.deltaTime * 20;
+        
+
     }
 
     private void FixedUpdate()
-    {       
-
-        float horizontalVelocity = Mathf.Clamp(playerBody.velocity.x + horizontalInput * changeDirectionReactivity, minSpeed, maxSpeed);
-
+    {
         
-        playerBody.velocity = new Vector2(horizontalVelocity, playerBody.velocity.y);
+        //Do user movement
+        float horizontalVelocity; 
 
-        
-
-        if (playerBody.velocity.y < 0)
+        //Control if not jumping/falling
+        if(playerBody.velocity.y == 0 && goLeft)
         {
-            playerBody.velocity += Vector2.up * Physics.gravity.y * fallMultiplier  * Time.fixedDeltaTime;
+            horizontalVelocity = Mathf.Clamp(playerBody.velocity.x - moveSpeed , minSpeed, maxSpeed);
+            playerBody.velocity = new Vector2(horizontalVelocity, playerBody.velocity.y);
+            goLeft = false;
+        }
+        if(playerBody.velocity.y == 0 && goRight)
+        {
+            horizontalVelocity = Mathf.Clamp(playerBody.velocity.x + moveSpeed, minSpeed, maxSpeed);
+            playerBody.velocity = new Vector2(horizontalVelocity, playerBody.velocity.y);
+            goRight = false;
+        }
+        
+        //Control if jumping/falling
+        if (playerBody.velocity.y != 0 && goLeft)
+        {
+            horizontalVelocity = Mathf.Clamp(playerBody.velocity.x - (moveSpeed /airControl), minSpeed, maxSpeed);
+            playerBody.velocity = new Vector2(horizontalVelocity, playerBody.velocity.y);
+            goLeft = false;
         }
 
-        if (playerBody.velocity.y > 0 && !Input.GetButton("Jump"))
+        if (playerBody.velocity.y != 0 && goRight)
         {
-             playerBody.velocity += Vector2.up * Physics.gravity.y * (fallMultiplier - 1) * Time.fixedDeltaTime;
+            horizontalVelocity = Mathf.Clamp(playerBody.velocity.x + (moveSpeed /airControl), minSpeed, maxSpeed);
+            playerBody.velocity = new Vector2(horizontalVelocity, playerBody.velocity.y);
+            goRight = false;
         }
 
         if (jumpKeyPressed)
         {
-            
+            //Ground Jump
             if (onGround)
-            {                
-                playerBody.AddForce(Vector2.up * jumpMultiplier, ForceMode2D.Impulse);              
-                
+            {
+                playerBody.AddForce(Vector2.up * jumpMultiplier, ForceMode2D.Impulse);
+
 
                 canDoubleJump = true;
             }
-
+            //Double jump
             else if (canDoubleJump)
             {
                 canDoubleJump = false;
-                if(playerBody.velocity.y < 0)
-                {
-                    playerBody.velocity = new Vector2(playerBody.velocity.x, 0);
-                }
-                
+
+                playerBody.velocity = new Vector2(playerBody.velocity.x, 0);
                 playerBody.AddForce(Vector2.up * jumpMultiplier, ForceMode2D.Impulse);
             }
             jumpKeyPressed = false;
         }
 
-        horizontalInput = 0;
+        //Cleaner fall mechanic
+        if (playerBody.velocity.y < 0)
+        {
+            playerBody.velocity += Vector2.up * Physics.gravity.y * fallMultiplier  * Time.fixedDeltaTime;
+        }
+
+        if (playerBody.velocity.y > 0 && !Input.GetKey(jump))
+        {
+             playerBody.velocity += Vector2.up * Physics.gravity.y  * Time.fixedDeltaTime;
+        }        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
