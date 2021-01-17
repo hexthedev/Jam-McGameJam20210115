@@ -1,11 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
+
+public class FixableDestructableHealthChangeEvent: UnityEvent<float>{ }
 
 public class FixableDestructable : MonoBehaviour
 {
-    public int health;
+    private int _health;
+    public int health
+    {
+        get => _health;
+        set
+        {
+            _health = value;
+            _onHealthChange.Invoke(_health);
+        }
+    }
     public int maxHealth;
     public float cooldownTime;
     public FixProgressBar progressBar;
@@ -27,6 +39,8 @@ public class FixableDestructable : MonoBehaviour
     public Material HighlighMaterial;
 
     public State state = State.FIXED;
+
+    public FixableDestructableHealthChangeEvent _onHealthChange;
 
     private void Awake()
     {
