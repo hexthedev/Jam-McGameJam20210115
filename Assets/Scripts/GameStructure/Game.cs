@@ -12,6 +12,7 @@ public class Game : MonoBehaviour
 
     public float KiwaiiHitRubbleScore = -5;
     public float KiwaiiCatchCatScore = 10;
+    public float KiwaiiRepairHouseScore = 5;
     public float KowaiiBreakHouseScore = -10;
     public float KowaiiHitHeartScore = 5;
 
@@ -30,7 +31,7 @@ public class Game : MonoBehaviour
         get => _score;
         set
         {
-            _score = value;
+            _score = Mathf.Clamp(value, -100, 100);
             if (value != 0) Events.Instance.InvokeEv(Events.eScoreChange, _score);
         }
     }
@@ -65,12 +66,12 @@ public class Game : MonoBehaviour
     {
         if(name == Events.eDestructableFixed)
         {
-            score = score + 10;
+            score = score + KiwaiiRepairHouseScore;
         }
 
         if(name == Events.eDestructableBroken)
         {
-            score = score - 10;
+            score = score + KowaiiBreakHouseScore;
         }
     }
 

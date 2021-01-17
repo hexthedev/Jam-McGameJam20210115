@@ -1667,6 +1667,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
         type: 3}
+      propertyPath: KowaiiBreakAmount
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
+        type: 3}
+      propertyPath: KiwaiiCatchCatScore
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
+        type: 3}
+      propertyPath: KowaiiHitHeartScore
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
+        type: 3}
+      propertyPath: KiwaiiHitRubbleScore
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
+        type: 3}
+      propertyPath: KowaiiBreakHouseScore
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
+        type: 3}
+      propertyPath: KiwaiiRepairHouseScore
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
+        type: 3}
       propertyPath: OnGameOver.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 828758654}
