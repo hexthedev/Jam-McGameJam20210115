@@ -7,9 +7,14 @@ public class AbilityProjectile : MonoBehaviour
     public ProjecileType Type;
 
     public float lifeTime;
+    public float stunLifeTime;
 
     void Start()
     {
+        if (gameObject.tag == "Stun")
+        {
+            lifeTime = stunLifeTime;
+        }
         Invoke(nameof(DestroyProjectile), lifeTime);
     }
 
