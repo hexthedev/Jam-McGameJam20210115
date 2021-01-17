@@ -23,8 +23,10 @@ public class PlayerController : MonoBehaviour
     public KeyCode right;
     public KeyCode drop;
     public KeyCode fixbreak;
+    public KeyCode stunCode;
 
     public Character character;
+    public Ability stun;
 
     Rigidbody2D playerBody;
     
@@ -60,6 +62,10 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKey(fixbreak))
         {
             character.BasicAction();
+        }
+        else if (Input.GetKey(stunCode))
+        {
+            stun.DoAbility();
         }
     }
 

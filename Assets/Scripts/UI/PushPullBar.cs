@@ -6,32 +6,29 @@ using UnityEngine.UI;
 public class PushPullBar : MonoBehaviour
 {  
     public Image foreGroundBarImage;
-
+    private Transform sparkleTransform;
     private float maxScore = 1f;
     private float currentScore;
     private float barScoreValue;
+    private float maxBarSize = 500f;
 
 
     public void Awake()
     {
         Events.Instance.Subscribe(HandleEvent);
+<<<<<<< Updated upstream
+        foreGroundBarImage = transform.Find("ForeGroundBarImage").GetComponent<Image>();
+=======
+        sparkleTransform = transform.Find("Sparkle");
+>>>>>>> Stashed changes
     }
 
     public void Start()
     {        
         Events.Instance.InvokeEv("ScoreChange", 0.5f);
-        currentScore = maxScore;
-        barScoreValue = maxScore;
-    }
-    
-
-    public void SetScore(float score)
-    {
-        foreGroundBarImage.transform.localScale = new Vector3(score / 10, foreGroundBarImage.transform.localScale.y, foreGroundBarImage.transform.localScale.z);
-
-        Debug.Log(currentScore);
-        currentScore = score;
-    }
+        currentScore = maxScore/2;
+        barScoreValue = currentScore;
+    }    
 
     float t = 0;
     private void Update()
@@ -39,10 +36,18 @@ public class PushPullBar : MonoBehaviour
         if (barScoreValue != currentScore)
         {
             barScoreValue = Mathf.Lerp(barScoreValue, currentScore, t);
-            t += 1f * Time.deltaTime;
+            t += .05f * Time.deltaTime;
         }
 
+        
+        ((RectTransform)sparkleTransform).anchoredPosition = new Vector2(barScoreValue * maxBarSize, 0); 
         foreGroundBarImage.fillAmount = barScoreValue;
+    }
+
+    public void SetScore(float score)
+    {
+        currentScore = score;
+        t = 0;
     }
 
     public void HandleEvent(string name, object args)

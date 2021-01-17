@@ -141,6 +141,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5639320592152078481, guid: 3c2854975ff4be541b32bcf7cf8d350c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6102262720243968558, guid: 3c2854975ff4be541b32bcf7cf8d350c,
         type: 3}
       propertyPath: m_RootOrder
@@ -230,6 +235,11 @@ PrefabInstance:
         type: 3}
       propertyPath: fixbreak
       value: 109
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271477238000908149, guid: 3c2854975ff4be541b32bcf7cf8d350c,
+        type: 3}
+      propertyPath: stunCode
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 6271477238000908149, guid: 3c2854975ff4be541b32bcf7cf8d350c,
         type: 3}

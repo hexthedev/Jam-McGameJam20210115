@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Game : MonoBehaviour
 {
@@ -14,8 +15,10 @@ public class Game : MonoBehaviour
     public float KowaiiBreakHouseScore = -10;
     public float KowaiiHitHeartScore = 5;
 
+    public UnityEvent OnGameOver;
 
     public float _score = 0;
+    public bool gameover = false;
 
     public List<FixableDestructable> Destructables = new List<FixableDestructable>();
 
@@ -45,12 +48,15 @@ public class Game : MonoBehaviour
 
     public void Update()
     {
+        if (gameover) return;
+
         time -= Time.deltaTime;
         Events.Instance.InvokeEv(Events.eTimer, time);
 
         if(time <= 0)
         {
             Events.Instance.InvokeEv(Events.eGameOver, null);
+            OnGameOver.Invoke();
         }
 
     }
