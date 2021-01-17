@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {       
-    bool onGround;
-    bool canDoubleJump;
+    public bool onGround;
+    
+    public bool canDoubleJump;
+    public UnityEvent OnJumpOccurs; 
+
     bool jumpKeyPressed;
     bool goLeft;
     bool goRight;
@@ -118,7 +122,8 @@ public class PlayerController : MonoBehaviour
             //Ground Jump
             if (onGround)
             {
-                playerBody.AddForce(Vector2.up * jumpMultiplier, ForceMode2D.Impulse);                
+                playerBody.AddForce(Vector2.up * jumpMultiplier, ForceMode2D.Impulse);
+                OnJumpOccurs?.Invoke();
             }
             //Double jump
             else if (canDoubleJump)
@@ -127,6 +132,7 @@ public class PlayerController : MonoBehaviour
 
                 playerBody.velocity = new Vector2(playerBody.velocity.x, 0);
                 playerBody.AddForce(Vector2.up * jumpMultiplier, ForceMode2D.Impulse);
+                OnJumpOccurs?.Invoke();
             }
             jumpKeyPressed = false;
         }
