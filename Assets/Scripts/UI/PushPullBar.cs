@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PushPullBar : MonoBehaviour
-{  
+{
     public Image foreGroundBarImage;
     private Transform sparkleTransform;
     private float maxScore = 1f;
@@ -20,11 +21,11 @@ public class PushPullBar : MonoBehaviour
     }
 
     public void Start()
-    {        
+    {
         Events.Instance.InvokeEv("ScoreChange", 0.5f);
-        currentScore = maxScore/2;
+        currentScore = maxScore / 2;
         barScoreValue = currentScore;
-    }    
+    }
 
     float t = 0;
     private void Update()
@@ -35,8 +36,8 @@ public class PushPullBar : MonoBehaviour
             t += .05f * Time.deltaTime;
         }
 
-        
-        ((RectTransform)sparkleTransform).anchoredPosition = new Vector2(barScoreValue * maxBarSize, 0); 
+
+        ((RectTransform)sparkleTransform).anchoredPosition = new Vector2(barScoreValue * maxBarSize, 0);
         foreGroundBarImage.fillAmount = barScoreValue;
     }
 
