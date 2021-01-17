@@ -47,13 +47,13 @@ public class Game : MonoBehaviour
 
     public void Start()
     {
-        AkSoundEngine.PostEvent("MainMusic", gameObject);
+        //AkSoundEngine.PostEvent("MainMusic", gameObject);
     }
 
 
     public void Update()
     {
-        AkSoundEngine.SetRTPCValue("Score", _score);
+        //AkSoundEngine.SetRTPCValue("Score", _score);
         if (gameover) return;
 
         time -= Time.deltaTime;
