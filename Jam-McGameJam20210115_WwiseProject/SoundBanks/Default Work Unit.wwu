@@ -5,14 +5,22 @@
 			<ChildrenList>
 				<SoundBank Name="SFX" ID="{7CFC27D3-2DB7-4E95-A0CC-8F23A0FB851B}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Test" ID="{DEED5EC7-8CE0-411A-BB75-41C116B3FBEE}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BuildingDestroyed" ID="{4A5AAAED-7709-42A4-BDD1-C6E6D6F1F283}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BabyCaught" ID="{6E23002C-56C6-43F9-B9F3-C5807B8D61CD}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StunHit" ID="{6D36C405-687F-478B-886B-AE3335EBEA59}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StunFire" ID="{412F47FA-BB91-47CD-BBDC-6EAB2CEA81AE}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Jump" ID="{BCFB9979-628B-48AD-9254-3C5554B1FA41}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BabyFall" ID="{167388CE-F297-4A5C-8F31-DCFE85745DFA}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BuildingFix" ID="{CBFF69A6-CBAB-4CF6-A83E-3A490AD92D80}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BuildingBreak" ID="{27D1B11B-33DC-4FFD-8040-3E9A92249B62}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Music" ID="{A1187683-671D-44F1-B24C-5A898EA648ED}">
 					<ObjectInclusionList>
-						<ObjectRef Name="MainMusic" ID="{D9C47EA8-F5F4-4DE3-98DA-91F5BA27BBF8}" WorkUnitID="{F724EC24-2AA7-466A-B949-E50E8EA792C0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MainMusic_Stop" ID="{B09E1DF8-1AF5-43CA-AEA6-699D78586ED5}" WorkUnitID="{F724EC24-2AA7-466A-B949-E50E8EA792C0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MainMusic_Play" ID="{D9C47EA8-F5F4-4DE3-98DA-91F5BA27BBF8}" WorkUnitID="{F724EC24-2AA7-466A-B949-E50E8EA792C0}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

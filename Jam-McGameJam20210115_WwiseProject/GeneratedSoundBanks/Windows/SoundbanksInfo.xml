@@ -11,22 +11,144 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3546478083">
+		<SoundBank Id="393239870" Language="SFX" Hash="3447710523">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2537773241" Name="BabyCaught" ObjectPath="\Events\Default Work Unit\SFX\BabyCaught" DurationType="OneShot" DurationMin="0.865689" DurationMax="1.217422">
+					<IncludedMemoryFiles>
+						<File Id="689030195" Language="SFX">
+							<ShortName>BabyCaught3.wav</ShortName>
+							<Path>SFX\BabyCaught3_10C4C929.wem</Path>
+						</File>
+						<File Id="889932136" Language="SFX">
+							<ShortName>BabyCaught2.wav</ShortName>
+							<Path>SFX\BabyCaught2_10C4C929.wem</Path>
+						</File>
+						<File Id="987114580" Language="SFX">
+							<ShortName>BabyCaught1.wav</ShortName>
+							<Path>SFX\BabyCaught1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4025803590" Name="BabyFall" ObjectPath="\Events\Default Work Unit\SFX\BabyFall" DurationType="OneShot" DurationMin="1.533400" DurationMax="1.954529">
+					<IncludedMemoryFiles>
+						<File Id="424346802" Language="SFX">
+							<ShortName>BabyFall2.wav</ShortName>
+							<Path>SFX\BabyFall2_10C4C929.wem</Path>
+						</File>
+						<File Id="526334924" Language="SFX">
+							<ShortName>BabyFall3.wav</ShortName>
+							<Path>SFX\BabyFall3_10C4C929.wem</Path>
+						</File>
+						<File Id="679111130" Language="SFX">
+							<ShortName>BabyFall1.wav</ShortName>
+							<Path>SFX\BabyFall1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4291778602" Name="BuildingBreak" ObjectPath="\Events\Default Work Unit\SFX\BuildingBreak" DurationType="OneShot" DurationMin="0.586135" DurationMax="0.840727">
+					<IncludedMemoryFiles>
+						<File Id="203582881" Language="SFX">
+							<ShortName>BuildingBreak1.wav</ShortName>
+							<Path>SFX\BuildingBreak1_10C4C929.wem</Path>
+						</File>
+						<File Id="634640141" Language="SFX">
+							<ShortName>BuildingBreak3.wav</ShortName>
+							<Path>SFX\BuildingBreak3_10C4C929.wem</Path>
+						</File>
+						<File Id="726406026" Language="SFX">
+							<ShortName>BuildingBreak2.wav</ShortName>
+							<Path>SFX\BuildingBreak2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3743841062" Name="BuildingDestroyed" ObjectPath="\Events\Default Work Unit\SFX\BuildingDestroyed" DurationType="OneShot" DurationMin="1.595981" DurationMax="2.162025">
+					<IncludedMemoryFiles>
+						<File Id="59251688" Language="SFX">
+							<ShortName>BuildingDestroy2.wav</ShortName>
+							<Path>SFX\BuildingDestroy2_10C4C929.wem</Path>
+						</File>
+						<File Id="116982363" Language="SFX">
+							<ShortName>BuildingDestroy3.wav</ShortName>
+							<Path>SFX\BuildingDestroy3_10C4C929.wem</Path>
+						</File>
+						<File Id="234407854" Language="SFX">
+							<ShortName>BuildingDestroy1.wav</ShortName>
+							<Path>SFX\BuildingDestroy1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="936772066" Name="BuildingFix" ObjectPath="\Events\Default Work Unit\SFX\BuildingFix" DurationType="OneShot" DurationMin="0.924090" DurationMax="1.199125">
+					<IncludedMemoryFiles>
+						<File Id="156417535" Language="SFX">
+							<ShortName>BuildingFix4.wav</ShortName>
+							<Path>SFX\BuildingFix4_10C4C929.wem</Path>
+						</File>
+						<File Id="467227712" Language="SFX">
+							<ShortName>BuildingFix2.wav</ShortName>
+							<Path>SFX\BuildingFix2_10C4C929.wem</Path>
+						</File>
+						<File Id="654991899" Language="SFX">
+							<ShortName>BuildingFix3.wav</ShortName>
+							<Path>SFX\BuildingFix3_10C4C929.wem</Path>
+						</File>
+						<File Id="685841396" Language="SFX">
+							<ShortName>BuildingFix1.wav</ShortName>
+							<Path>SFX\BuildingFix1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\SFX\Jump" DurationType="OneShot" DurationMin="0.101938" DurationMax="0.747163">
+					<IncludedMemoryFiles>
+						<File Id="165443109" Language="SFX">
+							<ShortName>Jump2.wav</ShortName>
+							<Path>SFX\Jump2_10C4C929.wem</Path>
+						</File>
+						<File Id="450759971" Language="SFX">
+							<ShortName>Jump1.wav</ShortName>
+							<Path>SFX\Jump1_10C4C929.wem</Path>
+						</File>
+						<File Id="480749055" Language="SFX">
+							<ShortName>Jump3.wav</ShortName>
+							<Path>SFX\Jump3_10C4C929.wem</Path>
+						</File>
+						<File Id="938733225" Language="SFX">
+							<ShortName>Jump4.wav</ShortName>
+							<Path>SFX\Jump4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1042488597" Name="StunFire" ObjectPath="\Events\Default Work Unit\SFX\StunFire" DurationType="OneShot" DurationMin="0.667487" DurationMax="0.840981">
+					<IncludedMemoryFiles>
+						<File Id="822918693" Language="SFX">
+							<ShortName>StunFire.wav</ShortName>
+							<Path>SFX\StunFire_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="123963964" Name="StunHit" ObjectPath="\Events\Default Work Unit\SFX\StunHit" DurationType="OneShot" DurationMin="2.066925" DurationMax="2.253997">
+					<IncludedMemoryFiles>
+						<File Id="940095900" Language="SFX">
+							<ShortName>StunHit.wav</ShortName>
+							<Path>SFX\StunHit_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2013084254">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1018117432">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="3103302615">
+		<SoundBank Id="3991942870" Language="SFX" Hash="1240598250">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3479155863" Name="MainMusic" ObjectPath="\Events\Default Work Unit\Music\MainMusic" DurationType="Infinite">
+				<Event Id="795638160" Name="MainMusic_Play" ObjectPath="\Events\Default Work Unit\Music\MainMusic_Play" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="160423646" Language="SFX">
 							<ShortName>Kiwaii_SectionCNeutre_4-4_L8_P0.wav</ShortName>
@@ -84,6 +206,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3439190578" Name="MainMusic_Stop" ObjectPath="\Events\Default Work Unit\Music\MainMusic_Stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="2398231425" Name="Score" ObjectPath="\Game Parameters\Default Work Unit\Music\Score"/>

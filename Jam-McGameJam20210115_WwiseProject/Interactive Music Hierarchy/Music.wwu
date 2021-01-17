@@ -6,13 +6,18 @@
 				<MusicSwitchContainer Name="Main" ID="{55987E1F-2018-4989-BC4B-3E2E48DB34F5}" ShortID="858349392">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="153"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0BF685EA-3ACB-4AE2-B095-02CFE3545E03}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{355AC49F-179F-419B-ABE6-81F71FFB1259}"/>
+							<ObjectRef Name="Music" ID="{E841D8DE-3D04-4572-BC8D-F40178BDF83F}" WorkUnitID="{355AC49F-179F-419B-ABE6-81F71FFB1259}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -839,7 +844,6 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
-													<ReferenceList/>
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>

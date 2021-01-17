@@ -13,7 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID MAINMUSIC = 3479155863U;
+        static const AkUniqueID BABYCAUGHT = 2537773241U;
+        static const AkUniqueID BABYFALL = 4025803590U;
+        static const AkUniqueID BUILDINGBREAK = 4291778602U;
+        static const AkUniqueID BUILDINGDESTROYED = 3743841062U;
+        static const AkUniqueID BUILDINGFIX = 936772066U;
+        static const AkUniqueID JUMP = 3833651337U;
+        static const AkUniqueID MAINMUSIC_PLAY = 795638160U;
+        static const AkUniqueID MAINMUSIC_STOP = 3439190578U;
+        static const AkUniqueID STUNFIRE = 1042488597U;
+        static const AkUniqueID STUNHIT = 123963964U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -46,6 +55,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

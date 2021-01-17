@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CC0952DE-7211-4911-A296-50141CCE6C07}" SchemaVersion="97" RootDocumentID="{9C3F893E-10A9-454E-B125-C4756369E5F2}">
 	<Events>
-		<WorkUnit Name="SFX" ID="{CC0952DE-7211-4911-A296-50141CCE6C07}" OwnerID="{9C3F893E-10A9-454E-B125-C4756369E5F2}" PersistMode="Nested"/>
+		<WorkUnit Name="SFX" ID="{CC0952DE-7211-4911-A296-50141CCE6C07}" OwnerID="{9C3F893E-10A9-454E-B125-C4756369E5F2}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="StunFire" ID="{412F47FA-BB91-47CD-BBDC-6EAB2CEA81AE}">
+					<ChildrenList>
+						<Action Name="" ID="{88E54BE0-2B13-436C-B280-E9E556B10EBB}" ShortID="232150872">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StunFire" ID="{097F61DA-10AF-4097-92C1-EA231EABE8F9}" WorkUnitID="{419A2FC7-CDE1-4CD8-B452-8393F4BF1B67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StunHit" ID="{6D36C405-687F-478B-886B-AE3335EBEA59}">
+					<ChildrenList>
+						<Action Name="" ID="{B1499E1E-D727-4BBD-975A-71FA502A97AA}" ShortID="887786096">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StunHit" ID="{F0276ADE-3899-4D10-AE46-77445770F35D}" WorkUnitID="{419A2FC7-CDE1-4CD8-B452-8393F4BF1B67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BabyCaught" ID="{6E23002C-56C6-43F9-B9F3-C5807B8D61CD}">
+					<ChildrenList>
+						<Action Name="" ID="{71F18F1B-6D9E-4838-805D-DF3FE5A79614}" ShortID="664706822">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BabyCaught" ID="{2A7AE2AF-DBAC-488C-BE38-BFEB8F939072}" WorkUnitID="{419A2FC7-CDE1-4CD8-B452-8393F4BF1B67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BabyFall" ID="{167388CE-F297-4A5C-8F31-DCFE85745DFA}">
+					<ChildrenList>
+						<Action Name="" ID="{A4236281-885A-4565-89D2-037B7A79C98F}" ShortID="114580519">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BabyFall" ID="{498892D3-3560-4574-9A47-26826ECB5471}" WorkUnitID="{419A2FC7-CDE1-4CD8-B452-8393F4BF1B67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BuildingBreak" ID="{27D1B11B-33DC-4FFD-8040-3E9A92249B62}">
+					<ChildrenList>
+						<Action Name="" ID="{EFA4AD36-1600-4C08-82D6-73BBEA2808B8}" ShortID="34347701">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BuildingBreak" ID="{4C303165-5966-4310-ADE0-02E4B140C163}" WorkUnitID="{419A2FC7-CDE1-4CD8-B452-8393F4BF1B67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BuildingDestroyed" ID="{4A5AAAED-7709-42A4-BDD1-C6E6D6F1F283}">
+					<ChildrenList>
+						<Action Name="" ID="{031AE23E-37F9-4E86-AE44-84A619DC8348}" ShortID="438793519">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BuildingDestroyed" ID="{E2B80B90-8E2D-40AA-B870-5218F9784229}" WorkUnitID="{419A2FC7-CDE1-4CD8-B452-8393F4BF1B67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BuildingFix" ID="{CBFF69A6-CBAB-4CF6-A83E-3A490AD92D80}">
+					<ChildrenList>
+						<Action Name="" ID="{7424A432-C910-4DB3-8D5D-88765CE31199}" ShortID="45824698">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BuildingFix" ID="{B4D567EE-FD77-4F80-9D33-375177CA6486}" WorkUnitID="{419A2FC7-CDE1-4CD8-B452-8393F4BF1B67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Jump" ID="{BCFB9979-628B-48AD-9254-3C5554B1FA41}">
+					<ChildrenList>
+						<Action Name="" ID="{D849C7E9-9966-473F-8EDA-7B703711D24C}" ShortID="738759105">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{31743A03-5EE0-4852-8FB0-5261B4F60009}" WorkUnitID="{419A2FC7-CDE1-4CD8-B452-8393F4BF1B67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
