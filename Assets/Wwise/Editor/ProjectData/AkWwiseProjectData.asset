@@ -49,7 +49,11 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 26ad0fdbb6bd82459bc7e7ff403cdc0b
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585908499391524109
+=======
+    m_lastTime: -8585907122319644958
+>>>>>>> Stashed changes
     List:
     - name: SFX
       guid: d327fc7cb72d954ea0cc8f23a0fb851b
@@ -68,7 +72,11 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3e893f9ca9104e45b125c4756369e5f2
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585908499391714276
+=======
+    m_lastTime: -8585907122322904095
+>>>>>>> Stashed changes
     List: []
   - PhysicalPath: Events\SFX.wwu
     PathAndIcons:
@@ -79,7 +87,11 @@ MonoBehaviour:
     ParentPath: Default Work Unit\SFX
     guid: de5209cc11721149a29650141cce6c07
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585908499391714276
+=======
+    m_lastTime: -8585907122322904095
+>>>>>>> Stashed changes
     List:
     - name: Test
       guid: c75eeddee08c1a41bb7541c116b3fbee
@@ -93,8 +105,24 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\SFX\Test
       maxAttenuation: 0
+<<<<<<< Updated upstream
       maxDuration: 7.457846
       minDuration: 7.457846
+=======
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\SFX.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: SFX
+      ObjectType: 12
+    ParentPath: Default Work Unit\SFX
+    guid: de5209cc11721149a29650141cce6c07
+    GuidInternal: 
+    m_lastTime: -8585907122322894084
+    List: []
+>>>>>>> Stashed changes
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -103,8 +131,35 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c5fdff720e30cd4c9f314b73c29f192b
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585908499391704270
     List: []
+=======
+    m_lastTime: -8585907122322894084
+    List: []
+  - PhysicalPath: Game Parameters\Music.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Music
+      ObjectType: 12
+    ParentPath: Default Work Unit\Music
+    guid: 468f7d8b34e9014ca5a4f7b44edcbdfb
+    GuidInternal: 
+    m_lastTime: -8585907122322894084
+    List:
+    - name: Score
+      guid: b68edde2eb2fdc40831df93020cf27c5
+      id: 2398231425
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Score
+        ObjectType: 13
+      Path: Default Work Unit\Music\Score
+>>>>>>> Stashed changes
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -123,8 +178,51 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e1e1291b60770746ab229a7bb01a6f38
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585908499391504089
     List: []
+=======
+    m_lastTime: -8585907122319634954
+    List: []
+  - PhysicalPath: Switches\Music.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Music
+      ObjectType: 12
+    ParentPath: Default Work Unit\Music
+    guid: 391b041c76da2b479a320e2198def80f
+    GuidInternal: 
+    m_lastTime: -8585907122319634954
+    List:
+    - name: Main
+      guid: b7e7ba3daa714947ba0a2fbf25fd49d0
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 11
+      Path: Default Work Unit\Music\Main
+      values:
+      - name: Bad
+        guid: 4e9f317593c73847841ebc7f0c62f45f
+        id: 513390134
+        PathAndIcons:
+        - ElementName: Bad
+          ObjectType: 10
+      - name: Good
+        guid: f2f4b3ae79aff04e959641ac80ce2bd4
+        id: 668632890
+        PathAndIcons:
+        - ElementName: Good
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+>>>>>>> Stashed changes
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
