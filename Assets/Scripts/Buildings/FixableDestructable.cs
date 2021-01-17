@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
+[System.Serializable]
 public class FixableDestructableHealthChangeEvent: UnityEvent<float>{ }
 
 public class FixableDestructable : MonoBehaviour
@@ -14,7 +15,7 @@ public class FixableDestructable : MonoBehaviour
         get => _health;
         set
         {
-            _health = value;
+            _health = Mathf.Clamp(value, 0, 100);
             _onHealthChange?.Invoke(_health);
         }
     }

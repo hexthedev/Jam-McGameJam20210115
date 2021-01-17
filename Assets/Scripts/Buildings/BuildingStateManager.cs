@@ -15,6 +15,13 @@ public class BuildingStateManager : MonoBehaviour
         ChangeState(State);
     }
 
+    public void StateFromHealth(float health)
+    {
+        if (health == 0) ChangeState(BuildingState.DESTROYED);
+        else if (health == 100) ChangeState(BuildingState.FIXED);
+        else ChangeState(BuildingState.BREAKING);
+    }
+
     public void ChangeState(BuildingState state)
     {
         switch (state) 
