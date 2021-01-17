@@ -61,6 +61,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kowaii
       objectReference: {fileID: 0}
+    - target: {fileID: 6271477238000907918, guid: 3c2854975ff4be541b32bcf7cf8d350c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 6271477238000908146, guid: 3c2854975ff4be541b32bcf7cf8d350c,
         type: 3}
       propertyPath: m_RootOrder
@@ -144,7 +149,7 @@ PrefabInstance:
     - target: {fileID: 6271477238000908149, guid: 3c2854975ff4be541b32bcf7cf8d350c,
         type: 3}
       propertyPath: stunCode
-      value: 120
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 6271477238000908149, guid: 3c2854975ff4be541b32bcf7cf8d350c,
         type: 3}
