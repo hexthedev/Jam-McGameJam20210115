@@ -18,6 +18,8 @@ namespace AK
         static const AkUniqueID BUILDINGBREAK = 4291778602U;
         static const AkUniqueID BUILDINGDESTROYED = 3743841062U;
         static const AkUniqueID BUILDINGFIX = 936772066U;
+        static const AkUniqueID CATCAUGHT = 3846280051U;
+        static const AkUniqueID CATFALL = 1532010348U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID MAINMUSIC_PLAY = 795638160U;
         static const AkUniqueID MAINMUSIC_STOP = 3439190578U;

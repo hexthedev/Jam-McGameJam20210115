@@ -2,23 +2,31 @@ Event	ID	Name			Wwise Object Path	Notes
 	123963964	StunHit			\Default Work Unit\SFX\StunHit	
 	936772066	BuildingFix			\Default Work Unit\SFX\BuildingFix	
 	1042488597	StunFire			\Default Work Unit\SFX\StunFire	
+	1532010348	CatFall			\Default Work Unit\SFX\CatFall	
 	2537773241	BabyCaught			\Default Work Unit\SFX\BabyCaught	
 	3743841062	BuildingDestroyed			\Default Work Unit\SFX\BuildingDestroyed	
 	3833651337	Jump			\Default Work Unit\SFX\Jump	
+	3846280051	CatCaught			\Default Work Unit\SFX\CatCaught	
 	4025803590	BabyFall			\Default Work Unit\SFX\BabyFall	
 	4291778602	BuildingBreak			\Default Work Unit\SFX\BuildingBreak	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2453442396	CatDelay	Wwise Stereo Delay			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	59251688	BuildingDestroy2	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BuildingDestroy2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BuildingDestroyed\BuildingDestroy2		339836
 	116982363	BuildingDestroy3	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BuildingDestroy3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BuildingDestroyed\BuildingDestroy3		316076
 	156417535	BuildingFix4	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BuildingFix4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BuildingFix\BuildingFix4		185544
-	165443109	Jump2	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\Jump2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Jump\Jump2		21500
+	161351730	CatFall1	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\CatFall1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CatFall\CatFall1		254080
+	165443109	Jump2	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\Jump2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Jump\Jump2		117484
 	203582881	BuildingBreak1	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BuildingBreak1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BuildingBreak\BuildingBreak1		132188
 	234407854	BuildingDestroy1	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BuildingDestroy1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BuildingDestroyed\BuildingDestroy1		316072
+	296774213	CatFall2	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\CatFall2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CatFall\CatFall2		326944
+	394778197	CatCaught2	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\CatCaught2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CatCaught\CatCaught2		111624
 	424346802	BabyFall2	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BabyFall2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BabyFall\BabyFall2		325492
-	450759971	Jump1	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\Jump1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Jump\Jump1		31164
+	450759971	Jump1	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\Jump1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Jump\Jump1		98536
+	453723056	CatCaught1	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\CatCaught1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CatCaught\CatCaught1		133620
 	467227712	BuildingFix2	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BuildingFix2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BuildingFix\BuildingFix2		185544
-	480749055	Jump3	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\Jump3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Jump\Jump3		20248
 	526334924	BabyFall3	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BabyFall3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BabyFall\BabyFall3		286640
 	634640141	BuildingBreak3	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BuildingBreak3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BuildingBreak\BuildingBreak3		127188
 	654991899	BuildingFix3	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BuildingFix3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BuildingFix\BuildingFix3		183036
@@ -28,7 +36,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	726406026	BuildingBreak2	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BuildingBreak2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BuildingBreak\BuildingBreak2		116120
 	822918693	StunFire	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\StunFire_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Stun\StunFire		132228
 	889932136	BabyCaught2	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BabyCaught2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BabyCaught\BabyCaught2		164116
-	938733225	Jump4	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\Jump4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Jump\Jump4		117484
 	940095900	StunHit	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\StunHit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Stun\StunHit		380812
 	987114580	BabyCaught1	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Mac\SFX\BabyCaught1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BabyCaught\BabyCaught1		202764
 

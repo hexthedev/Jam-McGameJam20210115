@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3447710523">
+		<SoundBank Id="393239870" Language="SFX" Hash="188453050">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -100,7 +100,31 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\SFX\Jump" DurationType="OneShot" DurationMin="0.101938" DurationMax="0.747163">
+				<Event Id="3846280051" Name="CatCaught" ObjectPath="\Events\Default Work Unit\SFX\CatCaught" DurationType="OneShot" DurationMin="0.596931" DurationMax="0.802141">
+					<IncludedMemoryFiles>
+						<File Id="394778197" Language="SFX">
+							<ShortName>CatCaught2.wav</ShortName>
+							<Path>SFX\CatCaught2_10C4C929.wem</Path>
+						</File>
+						<File Id="453723056" Language="SFX">
+							<ShortName>CatCaught1.wav</ShortName>
+							<Path>SFX\CatCaught1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1532010348" Name="CatFall" ObjectPath="\Events\Default Work Unit\SFX\CatFall" DurationType="OneShot" DurationMin="1.359179" DurationMax="1.963250">
+					<IncludedMemoryFiles>
+						<File Id="161351730" Language="SFX">
+							<ShortName>CatFall1.wav</ShortName>
+							<Path>SFX\CatFall1_10C4C929.wem</Path>
+						</File>
+						<File Id="296774213" Language="SFX">
+							<ShortName>CatFall2.wav</ShortName>
+							<Path>SFX\CatFall2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\SFX\Jump" DurationType="OneShot" DurationMin="0.534564" DurationMax="0.695117">
 					<IncludedMemoryFiles>
 						<File Id="165443109" Language="SFX">
 							<ShortName>Jump2.wav</ShortName>
@@ -109,14 +133,6 @@
 						<File Id="450759971" Language="SFX">
 							<ShortName>Jump1.wav</ShortName>
 							<Path>SFX\Jump1_10C4C929.wem</Path>
-						</File>
-						<File Id="480749055" Language="SFX">
-							<ShortName>Jump3.wav</ShortName>
-							<Path>SFX\Jump3_10C4C929.wem</Path>
-						</File>
-						<File Id="938733225" Language="SFX">
-							<ShortName>Jump4.wav</ShortName>
-							<Path>SFX\Jump4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -138,7 +154,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="749706498">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1429906907">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

@@ -45,6 +45,14 @@
 							<ObjectRef Name="BuildingDestroyed" ID="{4A5AAAED-7709-42A4-BDD1-C6E6D6F1F283}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}"/>
 							<Position X="2" Y="2"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="CatFall" ID="{4C72C6C5-3F30-4097-9C4E-6487534B30AE}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="CatCaught" ID="{1A16EF50-E5DB-47D1-A825-D379620D4B90}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}"/>
+							<Position X="3" Y="3"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>

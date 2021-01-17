@@ -5,10 +5,12 @@
 			<ChildrenList>
 				<SoundBank Name="SFX" ID="{7CFC27D3-2DB7-4E95-A0CC-8F23A0FB851B}">
 					<ObjectInclusionList>
+						<ObjectRef Name="CatFall" ID="{4C72C6C5-3F30-4097-9C4E-6487534B30AE}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BuildingDestroyed" ID="{4A5AAAED-7709-42A4-BDD1-C6E6D6F1F283}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BabyCaught" ID="{6E23002C-56C6-43F9-B9F3-C5807B8D61CD}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StunHit" ID="{6D36C405-687F-478B-886B-AE3335EBEA59}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StunFire" ID="{412F47FA-BB91-47CD-BBDC-6EAB2CEA81AE}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="CatCaught" ID="{1A16EF50-E5DB-47D1-A825-D379620D4B90}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump" ID="{BCFB9979-628B-48AD-9254-3C5554B1FA41}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BabyFall" ID="{167388CE-F297-4A5C-8F31-DCFE85745DFA}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BuildingFix" ID="{CBFF69A6-CBAB-4CF6-A83E-3A490AD92D80}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}" Origin="Manual" Filter="7"/>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CA94C936-4E88-45E8-B893-C5342C80B4D0}" SchemaVersion="97">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{CA94C936-4E88-45E8-B893-C5342C80B4D0}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CA94C936-4E88-45E8-B893-C5342C80B4D0}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="SFX" ID="{2B903FAF-6778-4924-88AC-A6A29566B26E}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

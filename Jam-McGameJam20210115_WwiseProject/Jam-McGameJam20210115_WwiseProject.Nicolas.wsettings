@@ -3,11 +3,13 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{BCFBF789-93B0-4D37-8D67-4C15A63CE8D7}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Nicolas\Documents\Projects\Music\McGameJamSound\Export\Stun\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Nicolas\Documents\Projects\Music\McGameJamSound\Export\Jump\"/>
 				<Property Name="Event Action List\{167388CE-F297-4A5C-8F31-DCFE85745DFA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1A16EF50-E5DB-47D1-A825-D379620D4B90}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{27D1B11B-33DC-4FFD-8040-3E9A92249B62}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{412F47FA-BB91-47CD-BBDC-6EAB2CEA81AE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4A5AAAED-7709-42A4-BDD1-C6E6D6F1F283}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4C72C6C5-3F30-4097-9C4E-6487534B30AE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6D36C405-687F-478B-886B-AE3335EBEA59}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6E23002C-56C6-43F9-B9F3-C5807B8D61CD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B09E1DF8-1AF5-43CA-AEA6-699D78586ED5}\x64_Expand States" Type="string" Value=""/>

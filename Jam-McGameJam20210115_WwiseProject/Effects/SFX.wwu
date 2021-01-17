@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2B903FAF-6778-4924-88AC-A6A29566B26E}" SchemaVersion="97" RootDocumentID="{CA94C936-4E88-45E8-B893-C5342C80B4D0}">
+	<Effects>
+		<WorkUnit Name="SFX" ID="{2B903FAF-6778-4924-88AC-A6A29566B26E}" OwnerID="{CA94C936-4E88-45E8-B893-C5342C80B4D0}" PersistMode="Nested">
+			<ChildrenList>
+				<Effect Name="CatDelay" ID="{98660460-52CF-443E-B9F0-FDF800D6C70D}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+					<PropertyList>
+						<Property Name="LeftDelayTime" Type="Real32" Value="0.24"/>
+						<Property Name="RightDelayTime" Type="Real32" Value="0.27"/>
+						<Property Name="WetLevel" Type="Real32" Value="-30"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>
