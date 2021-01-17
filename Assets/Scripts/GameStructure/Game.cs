@@ -49,6 +49,7 @@ public class Game : MonoBehaviour
 
     public void Update()
     {
+        AkSoundEngine.SetRTPCValue("Score", _score);
         if (gameover) return;
 
         time -= Time.deltaTime;
