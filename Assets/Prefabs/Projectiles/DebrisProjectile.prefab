@@ -127,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   lifeTime: 2
+  stunLifeTime: 0.25
 --- !u!50 &-2769819747074363796
 Rigidbody2D:
   serializedVersion: 4
