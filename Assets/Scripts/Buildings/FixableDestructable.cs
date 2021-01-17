@@ -15,7 +15,7 @@ public class FixableDestructable : MonoBehaviour
         set
         {
             _health = value;
-            _onHealthChange.Invoke(_health);
+            _onHealthChange?.Invoke(_health);
         }
     }
     public int maxHealth;
