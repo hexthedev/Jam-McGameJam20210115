@@ -12,10 +12,7 @@ public class Game : MonoBehaviour
 
     public float KiwaiiHitRubbleScore = -5;
     public float KiwaiiCatchCatScore = 10;
-<<<<<<< Updated upstream
-=======
     public float KiwaiiRepairHouseScore = 10;
->>>>>>> Stashed changes
     public float KowaiiBreakHouseScore = -10;
     public float KowaiiHitHeartScore = 5;
 
