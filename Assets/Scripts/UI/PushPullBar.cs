@@ -16,7 +16,11 @@ public class PushPullBar : MonoBehaviour
     public void Awake()
     {
         Events.Instance.Subscribe(HandleEvent);
+
+        foreGroundBarImage = transform.Find("ForeGroundBarImage").GetComponent<Image>();
+
         sparkleTransform = transform.Find("Sparkle");
+
     }
 
     public void Start()

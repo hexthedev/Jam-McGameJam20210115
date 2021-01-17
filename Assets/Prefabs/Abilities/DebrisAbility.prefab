@@ -46,10 +46,12 @@ MonoBehaviour:
   testOnClick: 0
   projectilePrefab: {fileID: 8322240519737477344, guid: aa679dad0a5556748a8df83f218b4b35,
     type: 3}
-  minAngle: -90
-  maxAngle: 90
-  minSpeed: 150
-  maxSpeed: 500
-  catChance: 0.25
+  minDebrisAngle: -75
+  maxDebrisAngle: 75
+  minCatAngle: -10
+  maxCatAngle: 10
+  minSpeed: 250
+  maxSpeed: 350
+  catChance: 0.1
   catProjectile: {fileID: 8322240519737477344, guid: 0eadd8ad7311a6447b720a1b3e4861db,
     type: 3}

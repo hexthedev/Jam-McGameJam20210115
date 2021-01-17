@@ -59,11 +59,11 @@ public class PlayerController : MonoBehaviour
         {
             goDrop = true;
         }
-        else if (Input.GetKey(fixbreak))
+        else if (Input.GetKeyDown(fixbreak))
         {
             character.BasicAction();
         }
-        else if (Input.GetKey(stunCode))
+        else if (Input.GetKeyDown(stunCode))
         {
             stun.DoAbility();
         }

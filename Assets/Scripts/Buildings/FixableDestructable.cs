@@ -63,7 +63,7 @@ public class FixableDestructable : MonoBehaviour
 
     public void Break(int amount)
     {
-        if (!isOnBreakCoolDown)
+        if (!isOnBreakCoolDown && health > 0)
         {
             HealthChange(-amount);
             isOnBreakCoolDown = true;
