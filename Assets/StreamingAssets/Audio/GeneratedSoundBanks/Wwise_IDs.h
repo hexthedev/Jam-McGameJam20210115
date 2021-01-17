@@ -13,12 +13,33 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID TEST = 3157003241U;
+        static const AkUniqueID MAINMUSIC = 3479155863U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace MAIN
+        {
+            static const AkUniqueID GROUP = 3161908922U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BAD = 513390134U;
+                static const AkUniqueID GOOD = 668632890U;
+            } // namespace SWITCH
+        } // namespace MAIN
+
+    } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID SCORE = 2398231425U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace BANKS
 

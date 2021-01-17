@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3479155863	MainMusic			\Default Work Unit\Music\MainMusic	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3161908922	Main			\Default Work Unit\Music\Main	
+
+Switch	ID	Name	Switch Group			Notes
+	513390134	Bad	Main			
+	668632890	Good	Main			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2398231425	Score			\Default Work Unit\Music\Score	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	160423646	Kiwaii_SectionCNeutre_4-4_L8_P0	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Windows\SFX\Kiwaii_SectionCNeutre_4-4_L8_P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main\Main_Bad\Bad_SectionCNeutre_4-4_L8_P0\Kiwaii_SectionCNeutre_4-4_L8_P0		2490416
+	183246058	Kiwaii_SectionCBad_4-4_L10_P2B	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Windows\SFX\Kiwaii_SectionCBad_4-4_L10_P2B_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main\Main_Bad\Bad_SectionCBad_4-4_L10_P2B\Kiwaii_SectionCBad_4-4_L10_P2B		3182180
+	207577546	Kiwaii_SectionBGood_4-4_L10_P1B	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Windows\SFX\Kiwaii_SectionBGood_4-4_L10_P1B_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main\Main_Good\Kiwaii_SectionBGood_4-4_L10_P1B\Kiwaii_SectionBGood_4-4_L10_P1B		3113004
+	323611185	Kiwaii_SectionBBad_4-4_L10_P2B	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Windows\SFX\Kiwaii_SectionBBad_4-4_L10_P2B_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main\Main_Bad\Bad_SectionBBad_4-4_L10_P2B\Kiwaii_SectionBBad_4-4_L10_P2B		3182180
+	697686029	Kiwaii_SectionA_4-4_L9_P0	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Windows\SFX\Kiwaii_SectionA_4-4_L9_P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main\Main_Bad\Bad_SectionA_4-4_L9_P0\Kiwaii_SectionA_4-4_L9_P0		2767124
+	845801516	Kiwaii_SectionBNeutre_4-4_L9_P0	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Windows\SFX\Kiwaii_SectionBNeutre_4-4_L9_P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main\Main_Bad\Bad_SectionBNeutre_4-4_L9_P0\Kiwaii_SectionBNeutre_4-4_L9_P0		2767124
+	870135467	Kiwaii_SectionCGood_4-4_L10_P0	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Windows\SFX\Kiwaii_SectionCGood_4-4_L10_P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main\Main_Good\Kiwaii_SectionCGood_4-4_L10_P0\Kiwaii_SectionCGood_4-4_L10_P0		3043828
+	964530880	Kiwaii_Intro_4-4_L2_P0	C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\.cache\Windows\SFX\Kiwaii_Intro_4-4_L2_P0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main\Main_Bad\Bad_Intro_4-4_L2_P0\Kiwaii_Intro_4-4_L2_P0		830180
+

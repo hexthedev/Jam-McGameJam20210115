@@ -28,10 +28,11 @@
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115_WwiseIntegrationTemp\Jam-McGameJam20210115_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Switches\Music.wwu" DateLow="1610869803" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1610863795" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\States\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1610863794" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Queries\Factory Queries.wwu" DateLow="1609897917" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1609897917" DateHigh="0"/>
@@ -40,16 +41,22 @@
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Jam-McGameJam20210115_WwiseProject.wproj" DateLow="1610753849" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Events\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Jam-McGameJam20210115_WwiseProject.Nicolas.wsettings" DateLow="1610870101" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Interactive Music Hierarchy\Music.wwu" DateLow="1610869803" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1610863794" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Game Parameters\Music.wwu" DateLow="1610869803" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1610869803" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Events\SFX.wwu" DateLow="1610754511" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Events\Music.wwu" DateLow="1610869803" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Events\Default Work Unit.wwu" DateLow="1610863795" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Effects\Factory Effects.wwu" DateLow="1609897917" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1609897917" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1610754511" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1610753746" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="1610754511" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Nicolas\Documents\Projects\Games\McGameJam\Jam-McGameJam20210115\Jam-McGameJam20210115_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1610754511" DateHigh="0"/>
 </ValidationCache>
