@@ -20,11 +20,17 @@ public class DebrisShootAbility : Ability
 
     public override void DoAbility()
     {
-        Quaternion rotation = Quaternion.Euler(0,0, Random.Range(minAngle, maxAngle));
-
-        GameObject projPrefab = Random.Range(0f, 1f) < catChance ? catProjectile : projectilePrefab;
-        GameObject projectile = Instantiate(projPrefab, transform.position, rotation);
-
-        projectile.GetComponent<Rigidbody2D>().AddRelativeForce(Random.Range(minSpeed, maxSpeed) * Vector3.up);
+        if(Random.Range(0f, 1f) < catChance)
+        {
+            Quaternion rotation = Quaternion.Euler(0, 0, Random.Range(minAngle, maxAngle)); // change the angle to what you want
+            GameObject pro = Instantiate(catProjectile, transform.position, rotation);
+            pro.GetComponent<Rigidbody2D>().AddRelativeForce(Random.Range(minSpeed, maxSpeed) * Vector3.up); // change the amount of force
+        } 
+        else
+        {
+            Quaternion rotation = Quaternion.Euler(0, 0, Random.Range(minAngle, maxAngle));
+            GameObject pro = Instantiate(projectilePrefab, transform.position, rotation);
+            pro.GetComponent<Rigidbody2D>().AddRelativeForce(Random.Range(minSpeed, maxSpeed) * Vector3.up);
+        }
     }
 }

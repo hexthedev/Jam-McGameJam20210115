@@ -215,6 +215,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110222070}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &180937363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6928725514789301821, guid: d66d56c453000ec4bae7b5f4c0675102,
+    type: 3}
+  m_PrefabInstance: {fileID: 6928725514634611886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!251 &180937364
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180937363}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 15927
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &206208873
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,32 +385,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7951813011769909976}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &533350744
-BoxCollider2D:
+--- !u!251 &533350744
+PlatformEffector2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533350743}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.017502904, y: 3.3386059}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.6425884, y: 0.26126027}
-  m_EdgeRadius: 0
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 15927
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &547606725
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +720,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 610384021}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &622100449 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8000843065912598199, guid: 5afa01e4abaa34e4cbfa9996bd7e9af8,
+    type: 3}
+  m_PrefabInstance: {fileID: 8000843066364289366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!251 &622100450
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622100449}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 15927
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1001 &651818225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1058,6 +1101,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 819495955}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &824361155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1451478291273064747, guid: 38b8b60b1da7316488bf218aaeae2fe0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1451478292097360360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!251 &824361156
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824361155}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 15927
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &828758654
 GameObject:
   m_ObjectHideFlags: 0
@@ -2538,6 +2606,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628304141}
   m_CullTransparentMesh: 0
+--- !u!1 &1628548776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3659048041465158018, guid: 3ba63d33b5f5dbc45ba35737a6dbcb75,
+    type: 3}
+  m_PrefabInstance: {fileID: 3659048041984243498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!251 &1628548777
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628548776}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 15927
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1001 &1659960164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3115,6 +3208,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DumpsterLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 86364389559910468, guid: d641fef1feca9044c81dec1162ca7ebb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 86364389559910469, guid: d641fef1feca9044c81dec1162ca7ebb,
         type: 3}
       propertyPath: m_RootOrder
@@ -3298,10 +3396,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 824361156, guid: 38b8b60b1da7316488bf218aaeae2fe0, type: 3}
+      propertyPath: m_Size.y
+      value: 0.14564657
+      objectReference: {fileID: 0}
+    - target: {fileID: 824361156, guid: 38b8b60b1da7316488bf218aaeae2fe0, type: 3}
+      propertyPath: m_Offset.y
+      value: 4.918523
+      objectReference: {fileID: 0}
+    - target: {fileID: 824361156, guid: 38b8b60b1da7316488bf218aaeae2fe0, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1451478291273064747, guid: 38b8b60b1da7316488bf218aaeae2fe0,
         type: 3}
       propertyPath: m_Name
       value: Building2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451478291273064747, guid: 38b8b60b1da7316488bf218aaeae2fe0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1451478291273064748, guid: 38b8b60b1da7316488bf218aaeae2fe0,
         type: 3}
@@ -3367,10 +3482,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1628548777, guid: 3ba63d33b5f5dbc45ba35737a6dbcb75, type: 3}
+      propertyPath: m_Size.y
+      value: 0.15396786
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628548777, guid: 3ba63d33b5f5dbc45ba35737a6dbcb75, type: 3}
+      propertyPath: m_Offset.y
+      value: 8.6778755
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628548777, guid: 3ba63d33b5f5dbc45ba35737a6dbcb75, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3659048041465158018, guid: 3ba63d33b5f5dbc45ba35737a6dbcb75,
         type: 3}
       propertyPath: m_Name
       value: Building1_L3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3659048041465158018, guid: 3ba63d33b5f5dbc45ba35737a6dbcb75,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 3659048041465158019, guid: 3ba63d33b5f5dbc45ba35737a6dbcb75,
         type: 3}
@@ -3440,6 +3572,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DumpsterRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3880543330078735176, guid: cc332101c55072041985774c23d6d02d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 3880543330078735177, guid: cc332101c55072041985774c23d6d02d,
         type: 3}
@@ -3707,7 +3844,7 @@ PrefabInstance:
     - target: {fileID: 1184663204351020955, guid: 9c9d6817b4d02d2468322eb4669adbec,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c9d6817b4d02d2468322eb4669adbec, type: 3}
@@ -3806,6 +3943,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 180937364, guid: d66d56c453000ec4bae7b5f4c0675102, type: 3}
+      propertyPath: m_Size.y
+      value: 0.1278429
+      objectReference: {fileID: 0}
+    - target: {fileID: 180937364, guid: d66d56c453000ec4bae7b5f4c0675102, type: 3}
+      propertyPath: m_Offset.y
+      value: 6.0385365
+      objectReference: {fileID: 0}
+    - target: {fileID: 180937364, guid: d66d56c453000ec4bae7b5f4c0675102, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6928725514789301818, guid: d66d56c453000ec4bae7b5f4c0675102,
         type: 3}
       propertyPath: m_RootOrder
@@ -3866,6 +4015,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building1_L2
       objectReference: {fileID: 0}
+    - target: {fileID: 6928725514789301821, guid: d66d56c453000ec4bae7b5f4c0675102,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d66d56c453000ec4bae7b5f4c0675102, type: 3}
 --- !u!1001 &7951813011769909976
@@ -3875,6 +4029,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 533350744, guid: a8d82f39ce6499d4c98b98f62ba8a9a0, type: 3}
+      propertyPath: m_Size.y
+      value: 0.13319874
+      objectReference: {fileID: 0}
+    - target: {fileID: 533350744, guid: a8d82f39ce6499d4c98b98f62ba8a9a0, type: 3}
+      propertyPath: m_Offset.y
+      value: 3.4026365
+      objectReference: {fileID: 0}
+    - target: {fileID: 533350744, guid: a8d82f39ce6499d4c98b98f62ba8a9a0, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7951813011270118272, guid: a8d82f39ce6499d4c98b98f62ba8a9a0,
         type: 3}
       propertyPath: m_RootOrder
@@ -3935,6 +4101,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building3
       objectReference: {fileID: 0}
+    - target: {fileID: 7951813011270118287, guid: a8d82f39ce6499d4c98b98f62ba8a9a0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8d82f39ce6499d4c98b98f62ba8a9a0, type: 3}
 --- !u!1001 &8000843066364289366
@@ -3944,6 +4115,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 622100451, guid: 5afa01e4abaa34e4cbfa9996bd7e9af8, type: 3}
+      propertyPath: m_Size.y
+      value: 0.11998749
+      objectReference: {fileID: 0}
+    - target: {fileID: 622100451, guid: 5afa01e4abaa34e4cbfa9996bd7e9af8, type: 3}
+      propertyPath: m_Offset.y
+      value: 3.4134822
+      objectReference: {fileID: 0}
+    - target: {fileID: 622100451, guid: 5afa01e4abaa34e4cbfa9996bd7e9af8, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8000843065912598196, guid: 5afa01e4abaa34e4cbfa9996bd7e9af8,
         type: 3}
       propertyPath: m_RootOrder
@@ -4003,6 +4186,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Building1_L1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000843065912598199, guid: 5afa01e4abaa34e4cbfa9996bd7e9af8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5afa01e4abaa34e4cbfa9996bd7e9af8, type: 3}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3880543330078735177}
   - component: {fileID: 3812480072359607171}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DumpsterRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

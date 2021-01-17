@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 86364389559910469}
   - component: {fileID: 101908623}
-  m_Layer: 0
-  m_Name: Dumpster1
+  m_Layer: 9
+  m_Name: DumpsterLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
