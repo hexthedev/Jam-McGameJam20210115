@@ -1197,11 +1197,29 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 838432726}
+    - target: {fileID: 2652682055375670142, guid: 47dd45db835922e428436103971fe43d,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d1db4fc9c11dd2c47b3d1a8f44df87d3,
+        type: 2}
+    - target: {fileID: 2652682055375670142, guid: 47dd45db835922e428436103971fe43d,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8294019381911501436, guid: d1db4fc9c11dd2c47b3d1a8f44df87d3,
+        type: 2}
     - target: {fileID: 4777982616788453024, guid: 47dd45db835922e428436103971fe43d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 838432726}
+    - target: {fileID: 4777982617152182268, guid: 47dd45db835922e428436103971fe43d,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c270e4f809c9b0349aee272be3eef045,
+        type: 3}
     - target: {fileID: 4777982617905533777, guid: 47dd45db835922e428436103971fe43d,
         type: 3}
       propertyPath: m_Pivot.x
