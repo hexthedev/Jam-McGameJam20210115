@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     bool goLeft;
     bool goRight;
     bool goDrop;
+    bool stunned;
     float groundCheckBuffer = 0.5f;
     
     public float jumpMultiplier = 100f;
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public float maxSpeed = 10f;
     public float minSpeed = -10f;    
     public float airControl = 5f;
+    public float stunTime = 2f;
     public KeyCode jump;
     public KeyCode left;
     public KeyCode right;
@@ -36,37 +38,43 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         onGround = true;
+        stunned = false;
         playerBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Get user movement input
-        if (Input.GetKeyDown(jump))
+        if(!stunned)
         {
-            jumpKeyPressed = true;
+            //Get user movement input
+            if (Input.GetKeyDown(jump))
+            {
+                jumpKeyPressed = true;
+            }
+            else if (Input.GetKey(left))
+            {
+                goLeft = true;
+            }
+            else if (Input.GetKey(right))
+            {
+                goRight = true;
+            }
+            else if (Input.GetKey(drop))
+            {
+                goDrop = true;
+            }
+            else if (Input.GetKeyDown(fixbreak))
+            {
+                character.BasicAction();
+            }
+            else if (Input.GetKeyDown(stunCode))
+            {
+                stun.DoAbility();
+            }
         }
-        else if (Input.GetKey(left))
-        {
-            goLeft = true;
-        }
-        else if (Input.GetKey(right))
-        {
-            goRight = true;
-        }
-        else if (Input.GetKey(drop))
-        {
-            goDrop = true;
-        }
-        else if (Input.GetKeyDown(fixbreak))
-        {
-            character.BasicAction();
-        }
-        else if (Input.GetKeyDown(stunCode))
-        {
-            stun.DoAbility();
-        }
+        
+        
     }
 
     private void FixedUpdate()
@@ -136,6 +144,10 @@ public class PlayerController : MonoBehaviour
         }        
     }
 
+    private void ReleaseStun()
+    {
+        stunned = false;
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Floor" && playerBody.velocity.y < groundCheckBuffer && playerBody.velocity.y > -groundCheckBuffer)
@@ -150,9 +162,15 @@ public class PlayerController : MonoBehaviour
         {
             character.ProjectileCollision(proj);
         }
+
+        if(collision.gameObject.tag == "Stun")
+        {
+            stunned = true;
+            Invoke(nameof(ReleaseStun), stunTime);
+        }
     }
 
-    private void Wrap() { gameObject.GetComponent<CapsuleCollider2D>().enabled = true; }
+    private void ColliderWrap() { gameObject.GetComponent<CapsuleCollider2D>().enabled = true; }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -162,7 +180,7 @@ public class PlayerController : MonoBehaviour
             gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
 
             
-            Invoke(nameof(Wrap), 0.16f);
+            Invoke(nameof(ColliderWrap), 0.16f);
             
             Debug.Log("drop");
         }

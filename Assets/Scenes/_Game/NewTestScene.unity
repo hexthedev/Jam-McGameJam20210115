@@ -2381,6 +2381,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7498743568030686679, guid: 47dd45db835922e428436103971fe43d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7498743569911736546, guid: 47dd45db835922e428436103971fe43d,
         type: 3}
       propertyPath: m_IsActive
@@ -2395,6 +2400,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 665094079652647303, guid: 9c9d6817b4d02d2468322eb4669adbec,
+        type: 3}
+      propertyPath: cooldown
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1184663204351020647, guid: 9c9d6817b4d02d2468322eb4669adbec,
         type: 3}
       propertyPath: m_RootOrder
@@ -2472,6 +2482,11 @@ PrefabInstance:
     - target: {fileID: 5864441764989412, guid: aec1a8710c3918d49a0e917d23bd0ff6, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 268798707918277000, guid: aec1a8710c3918d49a0e917d23bd0ff6,
+        type: 3}
+      propertyPath: cooldown
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1941280562676586088, guid: aec1a8710c3918d49a0e917d23bd0ff6,
         type: 3}

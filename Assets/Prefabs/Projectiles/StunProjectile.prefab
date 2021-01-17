@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -4289118373137741276}
   m_Layer: 8
   m_Name: StunProjectile
-  m_TagString: Untagged
+  m_TagString: Stun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 3
   lifeTime: 2
+  stunLifeTime: 0.25
 --- !u!50 &5118208112628000622
 Rigidbody2D:
   serializedVersion: 4
