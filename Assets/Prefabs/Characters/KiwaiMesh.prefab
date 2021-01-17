@@ -394,7 +394,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5888449967354121014}
-  - component: {fileID: 529127706599641420}
   m_Layer: 0
   m_Name: KiwaiMesh
   m_TagString: Untagged
@@ -423,25 +422,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!95 &529127706599641420
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6556162026903556492}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 2544cfad0f5fa444587e8f2378e4f108, type: 3}
-  m_Controller: {fileID: 9100000, guid: 7774a60bab774cd4baa4b46ebccc4995, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6603616205334673953
 GameObject:
   m_ObjectHideFlags: 0
