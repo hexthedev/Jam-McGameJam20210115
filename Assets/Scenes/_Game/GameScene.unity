@@ -1399,16 +1399,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kiwaii
       objectReference: {fileID: 0}
-    - target: {fileID: 1184663204351020955, guid: 9c9d6817b4d02d2468322eb4669adbec,
-        type: 3}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1184663204351020955, guid: 9c9d6817b4d02d2468322eb4669adbec,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c9d6817b4d02d2468322eb4669adbec, type: 3}
 --- !u!1001 &5618261645103589281
