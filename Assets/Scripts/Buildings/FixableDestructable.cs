@@ -81,6 +81,7 @@ public class FixableDestructable : MonoBehaviour
         if (!isOnBreakCoolDown && health > 0)
         {
             HealthChange(-amount);
+
             isOnBreakCoolDown = true;
             Invoke(nameof(ResetBreakCooldown), cooldownTime);
 
@@ -90,7 +91,13 @@ public class FixableDestructable : MonoBehaviour
             }
         }
     }
-
+    private void Update()
+    {
+        if (health != 0 && health != maxHealth)
+        {
+            state = State.MIDDLE;
+        }        
+    }
     private void HealthChange(int amount)
     {
         health = Mathf.Clamp(health + amount, 0, maxHealth);
@@ -106,11 +113,7 @@ public class FixableDestructable : MonoBehaviour
         {
             Events.Instance.InvokeEv(Events.eDestructableFixed, null);
             state = State.FIXED;
-        } 
-        else if(state != State.MIDDLE && health != maxHealth && health != 0)
-        {
-            state = State.MIDDLE;
-        }
+        }        
     }
 
     private void ResetFixCooldown()
