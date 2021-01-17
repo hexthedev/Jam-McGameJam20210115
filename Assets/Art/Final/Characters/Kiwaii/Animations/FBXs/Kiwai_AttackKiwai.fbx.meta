@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 7168f6f96b5d06446be287803e7168cf
+guid: 364d1315f5e31fb4181b79e3983d61f8
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
-      74: 2719667337758538885
-    second: Kiwai_Tail_Wag
+      74: 7527785554817538013
+    second: Kiwai
   externalObjects: {}
   materials:
     materialImportMode: 1
