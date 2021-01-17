@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CC0952DE-7211-4911-A296-50141CCE6C07}" SchemaVersion="97" RootDocumentID="{9C3F893E-10A9-454E-B125-C4756369E5F2}">
 	<Events>
-		<WorkUnit Name="SFX" ID="{CC0952DE-7211-4911-A296-50141CCE6C07}" OwnerID="{9C3F893E-10A9-454E-B125-C4756369E5F2}" PersistMode="Nested">
-			<ChildrenList>
-				<Event Name="Test" ID="{DEED5EC7-8CE0-411A-BB75-41C116B3FBEE}">
-					<ChildrenList>
-						<Action Name="" ID="{9067D76E-265C-4763-AC84-22C8367620C5}" ShortID="216244343">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="RapMaster_Glitch_07" ID="{A14D7ACE-BAA8-4C1A-9D67-4E836A6FC1E9}" WorkUnitID="{419A2FC7-CDE1-4CD8-B452-8393F4BF1B67}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="SFX" ID="{CC0952DE-7211-4911-A296-50141CCE6C07}" OwnerID="{9C3F893E-10A9-454E-B125-C4756369E5F2}" PersistMode="Nested"/>
 	</Events>
 </WwiseDocument>

@@ -11,25 +11,91 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3505401658">
+		<SoundBank Id="393239870" Language="SFX" Hash="3546478083">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
-			<IncludedEvents>
-				<Event Id="3157003241" Name="Test" ObjectPath="\Events\Default Work Unit\SFX\Test" DurationType="OneShot" DurationMin="7.457846" DurationMax="7.457846">
-					<IncludedMemoryFiles>
-						<File Id="613647243" Language="SFX">
-							<ShortName>RapMaster_Glitch_07.wav</ShortName>
-							<Path>SFX\RapMaster_Glitch_07_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2953616821">
+		<SoundBank Id="1355168291" Language="SFX" Hash="750512368">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="3103302615">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3479155863" Name="MainMusic" ObjectPath="\Events\Default Work Unit\Music\MainMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="160423646" Language="SFX">
+							<ShortName>Kiwaii_SectionCNeutre_4-4_L8_P0.wav</ShortName>
+							<Path>SFX\Kiwaii_SectionCNeutre_4-4_L8_P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="183246058" Language="SFX">
+							<ShortName>Kiwaii_SectionCBad_4-4_L10_P2B.wav</ShortName>
+							<Path>SFX\Kiwaii_SectionCBad_4-4_L10_P2B_D79FB2B7.wem</Path>
+						</File>
+						<File Id="207577546" Language="SFX">
+							<ShortName>Kiwaii_SectionBGood_4-4_L10_P1B.wav</ShortName>
+							<Path>SFX\Kiwaii_SectionBGood_4-4_L10_P1B_D79FB2B7.wem</Path>
+						</File>
+						<File Id="323611185" Language="SFX">
+							<ShortName>Kiwaii_SectionBBad_4-4_L10_P2B.wav</ShortName>
+							<Path>SFX\Kiwaii_SectionBBad_4-4_L10_P2B_D79FB2B7.wem</Path>
+						</File>
+						<File Id="697686029" Language="SFX">
+							<ShortName>Kiwaii_SectionA_4-4_L9_P0.wav</ShortName>
+							<Path>SFX\Kiwaii_SectionA_4-4_L9_P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="845801516" Language="SFX">
+							<ShortName>Kiwaii_SectionBNeutre_4-4_L9_P0.wav</ShortName>
+							<Path>SFX\Kiwaii_SectionBNeutre_4-4_L9_P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="870135467" Language="SFX">
+							<ShortName>Kiwaii_SectionCGood_4-4_L10_P0.wav</ShortName>
+							<Path>SFX\Kiwaii_SectionCGood_4-4_L10_P0_D79FB2B7.wem</Path>
+						</File>
+						<File Id="964530880" Language="SFX">
+							<ShortName>Kiwaii_Intro_4-4_L2_P0.wav</ShortName>
+							<Path>SFX\Kiwaii_Intro_4-4_L2_P0_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{75319F4E-C793-4738-841E-BC7F0C62F45F}">
+							<Media>
+								<File Id="160423646"/>
+								<File Id="183246058"/>
+								<File Id="323611185"/>
+								<File Id="697686029"/>
+								<File Id="845801516"/>
+								<File Id="964530880"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{AEB3F4F2-AF79-4EF0-9596-41AC80CE2BD4}">
+							<Media>
+								<File Id="160423646"/>
+								<File Id="207577546"/>
+								<File Id="697686029"/>
+								<File Id="845801516"/>
+								<File Id="870135467"/>
+								<File Id="964530880"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="2398231425" Name="Score" ObjectPath="\Game Parameters\Default Work Unit\Music\Score"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="3161908922" Name="Main" ObjectPath="\Switches\Default Work Unit\Music\Main">
+					<Switches>
+						<Switch Id="668632890" Name="Good" ObjectPath="\Switches\Default Work Unit\Music\Main\Good"/>
+						<Switch Id="513390134" Name="Bad" ObjectPath="\Switches\Default Work Unit\Music\Main\Bad"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
