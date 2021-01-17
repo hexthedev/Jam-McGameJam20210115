@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{28287E4E-620C-4410-B28A-918E626CB95E}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{28287E4E-620C-4410-B28A-918E626CB95E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{28287E4E-620C-4410-B28A-918E626CB95E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Test" ID="{8D290830-CBCC-41F7-BD27-4C42A69DE90E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="MainMusic_Play" ID="{D9C47EA8-F5F4-4DE3-98DA-91F5BA27BBF8}" WorkUnitID="{F724EC24-2AA7-466A-B949-E50E8EA792C0}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Jump" ID="{BCFB9979-628B-48AD-9254-3C5554B1FA41}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BuildingFix" ID="{CBFF69A6-CBAB-4CF6-A83E-3A490AD92D80}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StunFire" ID="{412F47FA-BB91-47CD-BBDC-6EAB2CEA81AE}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MainMusic_Stop" ID="{B09E1DF8-1AF5-43CA-AEA6-699D78586ED5}" WorkUnitID="{F724EC24-2AA7-466A-B949-E50E8EA792C0}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BabyFall" ID="{167388CE-F297-4A5C-8F31-DCFE85745DFA}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BuildingBreak" ID="{27D1B11B-33DC-4FFD-8040-3E9A92249B62}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StunHit" ID="{6D36C405-687F-478B-886B-AE3335EBEA59}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BabyCaught" ID="{6E23002C-56C6-43F9-B9F3-C5807B8D61CD}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BuildingDestroyed" ID="{4A5AAAED-7709-42A4-BDD1-C6E6D6F1F283}" WorkUnitID="{CC0952DE-7211-4911-A296-50141CCE6C07}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Score" ID="{E2DD8EB6-2FEB-40DC-831D-F93020CF27C5}"/>
+							<Value>48.662</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Bad" ID="{75319F4E-C793-4738-841E-BC7F0C62F45F}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
