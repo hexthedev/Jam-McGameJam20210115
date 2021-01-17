@@ -1111,6 +1111,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
         type: 3}
+      propertyPath: StartMusic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202442314166985225, guid: d7e10066d3a87ae469020d98a5d70a18,
+        type: 3}
       propertyPath: KowaiiBreakAmount
       value: 50
       objectReference: {fileID: 0}

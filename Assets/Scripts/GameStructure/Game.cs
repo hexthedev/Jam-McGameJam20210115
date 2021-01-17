@@ -5,6 +5,8 @@ using UnityEngine.Events;
 
 public class Game : MonoBehaviour
 {
+    public bool StartMusic = false;
+
     public static Game Instance = null;
 
     public int KiwaiiHealAmount = 7;
@@ -47,7 +49,7 @@ public class Game : MonoBehaviour
 
     public void Start()
     {
-        AkSoundEngine.PostEvent("MainMusic", gameObject);
+        if(StartMusic) AkSoundEngine.PostEvent("MainMusic", gameObject);
     }
 
 
