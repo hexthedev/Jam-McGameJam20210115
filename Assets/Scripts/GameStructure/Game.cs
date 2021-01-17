@@ -45,6 +45,10 @@ public class Game : MonoBehaviour
         Events.Instance.Subscribe(HandleEvents);
     }
 
+    public void Start()
+    {
+        AkSoundEngine.PostEvent("MainMusic", gameObject);
+    }
 
 
     public void Update()
