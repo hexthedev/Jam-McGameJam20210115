@@ -49,8 +49,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 26ad0fdbb6bd82459bc7e7ff403cdc0b
     GuidInternal: 
-    m_lastTime: -8585908499391524109
+    m_lastTime: -8585907139306638637
     List:
+    - name: Music
+      guid: 837618a11d67f144b24c5a898ea648ed
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 7
+      Path: Default Work Unit\Music
     - name: SFX
       guid: d327fc7cb72d954ea0cc8f23a0fb851b
       id: 393239870
@@ -68,8 +77,33 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3e893f9ca9104e45b125c4756369e5f2
     GuidInternal: 
-    m_lastTime: -8585908499391714276
+    m_lastTime: -8585907139364971851
     List: []
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Music
+      ObjectType: 12
+    ParentPath: Default Work Unit\Music
+    guid: 24ec24f7a72a6a46b949e50e8ea792c0
+    GuidInternal: 
+    m_lastTime: -8585907139364892064
+    List:
+    - name: MainMusic
+      guid: a87ec4d9f4f5e34d98da91f5ba27bbf8
+      id: 3479155863
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MainMusic
+        ObjectType: 3
+      Path: Default Work Unit\Music\MainMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\SFX.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -79,22 +113,8 @@ MonoBehaviour:
     ParentPath: Default Work Unit\SFX
     guid: de5209cc11721149a29650141cce6c07
     GuidInternal: 
-    m_lastTime: -8585908499391714276
-    List:
-    - name: Test
-      guid: c75eeddee08c1a41bb7541c116b3fbee
-      id: 3157003241
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: SFX
-        ObjectType: 12
-      - ElementName: Test
-        ObjectType: 3
-      Path: Default Work Unit\SFX\Test
-      maxAttenuation: 0
-      maxDuration: 7.457846
-      minDuration: 7.457846
+    m_lastTime: -8585907139364902033
+    List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -103,8 +123,30 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c5fdff720e30cd4c9f314b73c29f192b
     GuidInternal: 
-    m_lastTime: -8585908499391704270
+    m_lastTime: -8585907139364842199
     List: []
+  - PhysicalPath: Game Parameters\Music.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Music
+      ObjectType: 12
+    ParentPath: Default Work Unit\Music
+    guid: 468f7d8b34e9014ca5a4f7b44edcbdfb
+    GuidInternal: 
+    m_lastTime: -8585907139364842199
+    List:
+    - name: Score
+      guid: b68edde2eb2fdc40831df93020cf27c5
+      id: 2398231425
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Score
+        ObjectType: 13
+      Path: Default Work Unit\Music\Score
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -123,8 +165,46 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e1e1291b60770746ab229a7bb01a6f38
     GuidInternal: 
-    m_lastTime: -8585908499391504089
+    m_lastTime: -8585907139306578797
     List: []
+  - PhysicalPath: Switches\Music.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Music
+      ObjectType: 12
+    ParentPath: Default Work Unit\Music
+    guid: 391b041c76da2b479a320e2198def80f
+    GuidInternal: 
+    m_lastTime: -8585907139306518960
+    List:
+    - name: Main
+      guid: b7e7ba3daa714947ba0a2fbf25fd49d0
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 11
+      Path: Default Work Unit\Music\Main
+      values:
+      - name: Bad
+        guid: 4e9f317593c73847841ebc7f0c62f45f
+        id: 513390134
+        PathAndIcons:
+        - ElementName: Bad
+          ObjectType: 10
+      - name: Good
+        guid: f2f4b3ae79aff04e959641ac80ce2bd4
+        id: 668632890
+        PathAndIcons:
+        - ElementName: Good
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -135,6 +215,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585908499391494070
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /Jam-McGameJam20210115_WwiseProject
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

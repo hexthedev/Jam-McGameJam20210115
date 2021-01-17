@@ -37,7 +37,7 @@ public class PushPullBar : MonoBehaviour
         }
 
 
-        ((RectTransform)sparkleTransform).anchoredPosition = new Vector2(barScoreValue * maxBarSize, 0);
+        ((RectTransform)sparkleTransform).anchoredPosition = new Vector2(barScoreValue * maxBarSize - 250, 0);
         foreGroundBarImage.fillAmount = barScoreValue;
     }
 
@@ -51,7 +51,7 @@ public class PushPullBar : MonoBehaviour
     {
         if (name == Events.eScoreChange)
         {
-            SetScore((float)args);
+            SetScore(((float)args + 100)/200f);
         }
     }
 }
