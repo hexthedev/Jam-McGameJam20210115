@@ -52,6 +52,6 @@ MonoBehaviour:
   maxCatAngle: 10
   minSpeed: 200
   maxSpeed: 300
-  catChance: 0.1
+  catChance: 0.053
   catProjectile: {fileID: 8322240519737477344, guid: 0eadd8ad7311a6447b720a1b3e4861db,
     type: 3}

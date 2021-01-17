@@ -28,6 +28,7 @@ public class DebrisShootAbility : Ability
     {
         if (Random.Range(0f, 1f) < catChance)
         {
+            AkSoundEngine.PostEvent("BabyFall", gameObject);
             Quaternion rotation = Quaternion.Euler(0, 0, Random.Range(minCatAngle, maxCatAngle)); // change the angle to what you want
             GameObject pro = Instantiate(catProjectile, transform.position, rotation);
             pro.GetComponent<Rigidbody2D>().AddRelativeForce(Random.Range(minSpeed, maxSpeed) * Vector3.up); // change the amount of force

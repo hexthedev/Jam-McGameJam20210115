@@ -70,6 +70,7 @@ public class FixableDestructable : MonoBehaviour
     {
         if (!isOnFixCooldown)
         {
+            AkSoundEngine.PostEvent("BuildingFix", gameObject);
             HealthChange(amount);
             isOnFixCooldown = true;
             Invoke(nameof(ResetFixCooldown), cooldownTime);
@@ -81,7 +82,7 @@ public class FixableDestructable : MonoBehaviour
         if (!isOnBreakCoolDown && health > 0)
         {
             HealthChange(-amount);
-
+            AkSoundEngine.PostEvent("BuildingBreak", gameObject);
             isOnBreakCoolDown = true;
             Invoke(nameof(ResetBreakCooldown), cooldownTime);
 
@@ -106,6 +107,7 @@ public class FixableDestructable : MonoBehaviour
 
         if (health == 0 && state != State.BROKEN)
         {
+            AkSoundEngine.PostEvent("BuildingDestroyed", gameObject);
             Events.Instance.InvokeEv(Events.eDestructableBroken, null);
             state = State.BROKEN;
         } 

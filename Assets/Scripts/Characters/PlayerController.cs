@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(jump))
             {
                 jumpKeyPressed = true;
+                AkSoundEngine.PostEvent("Jump", gameObject);
             }
             else if (Input.GetKey(left))
             {
@@ -75,6 +76,7 @@ public class PlayerController : MonoBehaviour
             else if (Input.GetKeyDown(stunCode))
             {
                 stun.DoAbility();
+                AkSoundEngine.PostEvent("StunFire", gameObject);
             }
         }
         
@@ -172,6 +174,7 @@ public class PlayerController : MonoBehaviour
         if(collision.gameObject.tag == "Stun")
         {
             stunned = true;
+            AkSoundEngine.PostEvent("StunHit", gameObject);
             Invoke(nameof(ReleaseStun), stunTime);
         }
     }
