@@ -107,7 +107,7 @@ public class FixableDestructable : MonoBehaviour
 
         if (health == 0 && state != State.BROKEN)
         {
-            AkSoundEngine.PostEvent("BabyDestroyed", gameObject);
+            AkSoundEngine.PostEvent("BuildingDestroyed", gameObject);
             Events.Instance.InvokeEv(Events.eDestructableBroken, null);
             state = State.BROKEN;
         } 
